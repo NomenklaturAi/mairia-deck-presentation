@@ -1,6 +1,6 @@
 <meta charset="utf-8">
-<title>MairIA Deck Presentation</title>
 <meta name="robots" content="noindex, nofollow, noarchive">
+<title>MairIA Deck Presentation</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Syne:wght@600;700;800&display=swap">
@@ -83,6 +83,7 @@ h2 em,h1 em{font-style:normal;color:var(--gold)}
 .tabs .shut{background:#3B2230;border-color:#7A3A48;color:#F6C9CF}
 .calls{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
 .calls i{font-style:normal;height:92px;border-radius:14px;background:#2A3570;border:1px solid #3A4585;display:flex;align-items:center;justify-content:center;font-size:34px;color:#DCE0F2}
+.petites{position:absolute;left:150px;bottom:96px;font-size:24px;color:#9EA6CF}.petites b{color:#DCE0F2;font-weight:600}
 .same{font-family:var(--display);font-weight:700;font-size:40px;line-height:1.2;color:#fff;margin-top:40px}.same b{color:var(--gold)}
 .prob{display:grid;grid-template-columns:1.05fr 1fr;gap:80px;margin-top:44px;align-items:center}
 .scatter{position:relative;height:500px}
@@ -92,12 +93,16 @@ h2 em,h1 em{font-style:normal;color:var(--gold)}
 .f4{right:20px;top:410px;transform:rotate(-2deg)}.f5{left:250px;top:-40px;transform:rotate(-1deg)}.f6{left:230px;bottom:-40px;transform:rotate(1.5deg)}
 .nums{display:flex;flex-direction:column;gap:30px;border-left:2px solid var(--line);padding-left:60px}
 .nums .k{font-size:17px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:var(--gold)}
-.nums .big{font-size:100px}.nums .lbl{margin-top:6px;font-size:22px}
+.nums .big{font-size:100px}.nums .calc{display:block;font-size:16px;color:var(--muted);margin-top:4px}.nums .lbl{margin-top:6px;font-size:22px}
 .pill-grid{display:grid;grid-template-columns:720px 1fr;gap:70px;align-items:center;flex:1}
 .pill-grid ul{list-style:none;display:flex;flex-direction:column;gap:22px;margin-top:44px}
 .pill-grid li{font-size:29px;line-height:1.35;font-weight:300;padding-left:30px;position:relative}
 .pill-grid li::before{content:"";position:absolute;left:0;top:15px;width:12px;height:12px;border-radius:50%;background:var(--gold)}
 .pill-grid li b{font-weight:600;color:var(--navy)}
+.s-lib .pill-grid ul{gap:26px;margin-top:40px}.s-lib .pill-grid li b{display:block;font-family:var(--display);font-weight:700;font-size:34px}
+.s-lib .pill-grid li small{display:block;font-size:24px;line-height:1.4;color:var(--muted);margin-top:6px}
+.chain{display:flex;flex-wrap:wrap;gap:8px 10px;align-items:center;margin-top:40px;font-size:19px;font-weight:600;color:var(--navy)}
+.chain span{background:var(--tint);border-radius:30px;padding:9px 16px}.chain span:last-child{background:var(--gold);}.chain i{font-style:normal;color:var(--gold);font-weight:700}
 .s-lib .media{aspect-ratio:2008/1440;width:100%;box-shadow:none}
 .s-lib .media.shot{aspect-ratio:1200/1725;height:860px;width:auto;justify-self:center;background:none}
 .s-lib .media.v{aspect-ratio:750/1110;width:570px;justify-self:center}
@@ -107,7 +112,6 @@ h2 em,h1 em{font-style:normal;color:var(--gold)}
   <div class="wm">Mair<span>IA</span></div>
   <div class="band"><p class="triad"><span class="t-lib">Libérez.</span><span class="t-sec">Sécurisez.</span><span class="t-pil">Pilotez.</span></p></div>
   <div class="sub">L'assistant IA des collectivités !</div>
-  <div class="by"><b>Marwan Sabara</b> · Fondateur</div>
   <div class="foot"><span class="brand">Mair<span>IA</span></span><span>mairia.fr</span></div>
 </section>
 
@@ -131,6 +135,7 @@ h2 em,h1 em{font-style:normal;color:var(--gold)}
       <p class="same">Même question, <b>plusieurs appels</b>.<br>Et un agent répond à chacun.</p>
     </div>
   </div>
+  <p class="petites">Et dans les petites communes ? <b>Parfois une seule permanence par semaine.</b></p>
   <div class="foot"><span class="brand">Mair<span>IA</span></span><span>Scène illustrative · 02 / 12</span></div>
 </section>
 
@@ -164,10 +169,11 @@ h2 em,h1 em{font-style:normal;color:var(--gold)}
       <div class="pillar t-lib">Libérez.</div>
       <div class="tri paper"><i class="b-lib"></i></div>
       <ul>
-        <li>Le citoyen pose sa question <b>avec ses mots</b>, sur le site de sa collectivité.</li>
-        <li>MairIA répond <b>à toute heure</b>, à partir des sources officielles.</li>
-        <li>Les agents gardent leur temps pour <b>ce qui demande un humain</b>.</li>
+        <li><b>Une réponse, sans attendre.</b><small>MairIA accompagne plusieurs citoyens simultanément, 24&nbsp;h/24 et 7&nbsp;j/7.</small></li>
+        <li><b>Moins d'appels répétitifs.</b><small>Le citoyen qui obtient sa réponse n'a plus besoin d'appeler le standard pour cette question.</small></li>
+        <li><b>Plus de temps pour l'humain.</b><small>Les agents se concentrent sur les situations qui demandent leur expertise.</small></li>
       </ul>
+      <div class="chain"><span>Question citoyenne</span><i>→</i><span>Réponse MairIA</span><i>→</i><span>Appel potentiellement évité</span><i>→</i><span>Temps d'accueil libéré</span></div>
     </div>
     <div class="media shot"><img src="media/widget-accueil-troyes.jpg" alt="Assistant IA de la Ville de Troyes, écran d'accueil"></div>
   </div>
@@ -188,6 +194,16 @@ h2 em,h1 em{font-style:normal;color:var(--gold)}
 .proofs div{display:grid;grid-template-columns:270px 1fr;gap:28px;align-items:baseline;border-top:1px solid var(--line);padding-top:22px}
 .proofs b{font-family:var(--display);font-weight:700;font-size:30px;color:var(--navy)}
 .proofs span{font-size:24px;line-height:1.4;color:var(--muted)}
+.proofs{gap:22px;margin-top:34px}.proofs div{padding-top:18px}
+.s-sec{padding-top:70px}
+.s-sec .sec-grid{flex:none;grid-template-columns:540px 1fr;gap:70px;align-items:center}
+.s-sec .pillar{font-size:100px}.s-sec .tri{margin-top:16px}
+.s-sec .wb{padding:18px;gap:12px}.s-sec .bu,.s-sec .bb{font-size:18px}.s-sec .bb .s{font-size:14px;margin-top:10px}.s-sec .wh{padding:14px 20px}.s-sec .wh b{font-size:20px}
+.s-sec .proofs{gap:12px;margin-top:24px}.s-sec .proofs div{grid-template-columns:250px 1fr;padding-top:12px}.s-sec .proofs b{font-size:25px}.s-sec .proofs span{font-size:20px}
+.crpa{display:grid;grid-template-columns:1fr 1010px;gap:40px;align-items:center;margin-top:26px;background:var(--tint);border-radius:18px;padding:20px 24px}
+.crpa p{font-size:21px;line-height:1.45;color:var(--navy)}.crpa b{font-weight:700}.crpa p small{display:block;margin-top:10px;font-size:17px;color:var(--muted)}
+.crpa figure{margin:0}.crpa img{display:block;width:1010px;height:auto;border-radius:10px;border:1px solid var(--line)}
+.crpa figcaption{margin-top:6px;font-size:14px;color:var(--muted)}
 .pil{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:50px}
 .pcol{border-radius:24px;padding:40px 44px}
 .pcol.now{background:#fff;border:1px solid var(--line)}
@@ -198,10 +214,23 @@ h2 em,h1 em{font-style:normal;color:var(--gold)}
 .pcol li::before{content:"";position:absolute;left:0;top:14px;width:12px;height:12px;border-radius:50%;background:var(--gold)}
 .pcol li b{font-weight:600;color:var(--navy)}.pcol.next li b{color:#fff}
 .pcol li small{display:block;font-size:20px;color:var(--muted);margin-top:4px}.pcol.next li small{color:#9EA6CF}
+.s-pil{padding-top:90px}
+.pil6{margin-top:26px;width:700px}
+.dash6{position:absolute;right:150px;top:100px;width:860px;margin:0}
+.lead6{font-size:32px;line-height:1.35;font-weight:300}.lead6 b{font-weight:600;color:var(--navy)}
+.pl6{list-style:none;display:flex;flex-direction:column;gap:18px;margin-top:34px}
+.pl6 li{font-size:24px;line-height:1.35;color:var(--muted);padding-left:28px;position:relative}
+.pl6 li::before{content:"";position:absolute;left:0;top:11px;width:11px;height:11px;border-radius:50%;background:var(--gold)}
+.pl6 li b{font-weight:600;color:var(--navy)}
+.vis6{margin-top:34px;background:var(--night);color:#DCE0F2;border-radius:16px;padding:20px 24px;font-size:21px;line-height:1.4}.vis6 .tag{background:#35407F;color:#DCE0F2}
+.dash6 img{display:block;width:860px;height:auto;border-radius:16px;border:1px solid var(--line);box-shadow:0 24px 60px rgba(34,44,94,.14)}
+@media print{.widget,.dash6 img,.media{box-shadow:none!important}}
+.dash6 figcaption{margin-top:12px;font-size:15px;line-height:1.4;color:var(--muted)}.dash6 figcaption b{color:var(--navy);font-weight:600}
 .moat{display:grid;grid-template-columns:1fr 1fr;gap:40px 90px;margin-top:50px}
 .moat .big{font-size:84px}
 .moat .lbl{font-size:21px}
 .moat.mech .big{font-size:64px}
+.deploy{margin-top:44px;align-self:flex-start;background:var(--navy);color:#fff;font-family:var(--display);font-weight:700;font-size:30px;border-radius:16px;padding:20px 32px}
 .assets{display:flex;gap:14px;flex-wrap:wrap;margin-top:44px}
 .assets span{font-family:var(--display);font-weight:700;font-size:19px;color:var(--navy);border:1.5px solid var(--navy);border-radius:40px;padding:12px 24px}
 .market{display:grid;grid-template-columns:500px 1fr;gap:90px;margin-top:40px;align-items:center}
@@ -210,6 +239,8 @@ h2 em,h1 em{font-style:normal;color:var(--gold)}
 .r1{width:480px;height:480px;background:var(--tint);color:var(--muted)}.r2{width:300px;height:300px;background:#C9CFEA;color:var(--navy)}
 .r3{width:120px;height:120px;background:var(--gold);color:var(--navy);align-items:center}
 .r1 span,.r2 span{margin-top:30px;font-size:21px}.r3 span{font-size:19px}
+.lex{display:flex;flex-direction:column;gap:6px;margin-top:22px;font-size:19px;color:var(--muted)}.lex b{display:inline-block;width:62px;font-family:var(--display);color:var(--navy)}
+.s-mkt .market{margin-top:24px}.s-mkt .rings{width:420px;height:420px}.s-mkt .r1{width:420px;height:420px}.s-mkt .r2{width:262px;height:262px}.s-mkt .r3{width:105px;height:105px}.s-mkt .mk{gap:26px}.s-mkt .reading{font-size:23px}
 .mk{display:flex;flex-direction:column;gap:34px}
 .mrow{display:grid;grid-template-columns:470px 1fr;gap:30px;align-items:center}
 .mrow .big{font-size:66px}
@@ -218,7 +249,7 @@ h2 em,h1 em{font-style:normal;color:var(--gold)}
 .reading{margin-top:8px;background:var(--navy);color:#DCE0F2;border-radius:16px;padding:22px 28px;font-size:26px;line-height:1.4}.reading b{color:var(--gold)}
 </style>
 
-<section style="--p:41.67%" class="slide">
+<section style="--p:41.67%" class="slide s-sec">
   <div class="sec-grid">
     <div class="widget" aria-label="Exemple de réponse MairIA">
       <div class="wh"><div class="av">IA</div><div><b>Besoin d'aide ?</b><small>Assistant de la Ville de Troyes</small></div></div>
@@ -232,66 +263,67 @@ h2 em,h1 em{font-style:normal;color:var(--gold)}
       <div class="pillar t-sec">Sécurisez.</div>
       <div class="tri paper"><i class="b-sec"></i></div>
       <div class="proofs">
-        <div><b>Source officielle</b><span>ouverte au moment de la question, avec le lien exact.</span></div>
-        <div><b>Bon service</b><span>commune, agglomération, Département ou État.</span></div>
-        <div><b>Traçable</b><span>chaque échange garde sa référence ; escalade vers le service compétent.</span></div>
-        <div><b>Souverain</b><span>Mistral AI · hébergement Scaleway à Paris · versions testées, retour arrière prévu.</span></div>
+        <div><b>Sources officielles</b><span>réponses vérifiables : la page officielle, avec le lien exact.</span></div>
+        <div><b>Bon interlocuteur</b><span>commune, agglomération, Département ou État ; escalade humaine tracée vers le service compétent.</span></div>
+        <div><b>Souveraineté</b><span>Mistral AI · hébergement Scaleway à Paris.</span></div>
+        <div><b>Traçabilité</b><span>chaque échange garde sa référence. Protection des données et maîtrise des traitements intégrées à la conception.</span></div>
       </div>
     </div>
+  </div>
+  <div class="crpa">
+    <p>Des fonctionnalités conçues pour accompagner les collectivités dans leurs obligations d'information et d'orientation des usagers, notamment dans le cadre du <b>Code des relations entre le public et l'administration (CRPA)</b>.<small>Escalade tracée : référence, délai de réponse et statut suivis dans le tableau de bord.</small></p>
+    <figure><img src="media/tickets-crpa-troyes.jpg" alt="Tableau de bord MairIA, tickets citoyens d'escalade avec délai CRPA"><figcaption>Tableau de bord MairIA · Ville de Troyes · ticket de test, référence masquée.</figcaption></figure>
   </div>
   <div class="src"><span class="tag p">Prouvé</span>Cas testé le 29/08/2026 ; règle, service, numéro et lien revalidés le 30/09/2026 sur la page officielle. Interface redessinée, réponse résumée.</div>
   <div class="foot"><span class="brand">Mair<span>IA</span></span><span>05 / 12</span></div>
 </section>
 
-<section style="--p:50.00%" class="slide">
+<section style="--p:50.00%" class="slide s-pil">
   <div class="pillar t-pil">Pilotez.</div>
   <div class="tri paper"><i class="b-pil"></i></div>
-  <p class="lead">Comprendre ce que les citoyens demandent <b>vraiment</b>.</p>
-  <div class="pil">
-    <div class="pcol now">
-      <div class="k">Aujourd'hui · dans le produit</div>
-      <ul>
-        <li><b>Historique des demandes</b><small>chaque échange est conservé</small></li>
-        <li><b>Retours citoyens</b><small>chaque réponse peut être évaluée</small></li>
-        <li><b>Volumes et escalades</b><small>ce qui a été transmis au service</small></li>
+  <div class="pil6">
+    <div>
+      <p class="lead6">Comprendre les demandes citoyennes pour <b>améliorer le service public</b>.</p>
+      <ul class="pl6">
+        <li><b>Volumes, questions récurrentes, escalades</b></li>
+        <li><b>Retours des citoyens</b> · chaque réponse peut être <span style="white-space:nowrap">notée 👍 / 👎</span></li>
+        <li><b>Points de friction</b> repérés, réponses améliorées</li>
+        <li><b>Visibilité</b> pour les équipes et les responsables</li>
       </ul>
+      <div class="vis6"><span class="tag a">Vision</span>Demain : des synthèses territoriales et un pilotage mutualisé entre collectivités et intercommunalités.</div>
     </div>
-    <div class="pcol next">
-      <div class="k">Demain · vision produit</div>
-      <ul>
-        <li><b>Synthèses pour les équipes et les élus</b><small>hebdomadaires ou mensuelles</small></li>
-        <li><b>Irritants et besoins récurrents</b><small>pour décider où agir en premier</small></li>
-      </ul>
-    </div>
+    <figure class="dash6"><img src="media/dashboard-pilote-troyes.jpg" alt="Tableau de bord MairIA, pilote Ville de Troyes, questions masquées">
+      <figcaption><b>Pilote MairIA · Ville de Troyes · tests métiers 2026.</b> 674 conversations réalisées dans le cadre du pilote et des tests conduits par les équipes troyennes. Indicateurs de l'environnement d'expérimentation, avant ouverture au grand public. Questions masquées.</figcaption></figure>
   </div>
   <div class="foot"><span class="brand">Mair<span>IA</span></span><span>06 / 12</span></div>
 </section>
 
 <section style="--p:58.33%" class="slide">
   <div class="eyebrow">Ce qui nous différencie</div>
-  <h2>Ce qui est difficile à copier, <em>ce n'est pas l'IA.</em></h2>
+  <h2>Bien plus qu'un chatbot. <em>Une plateforme pensée pour les collectivités.</em></h2>
   <p class="lead">Le modèle vient de Mistral AI. Notre actif, c'est <b>tout ce que nous avons construit autour</b>.</p>
   <div class="moat mech">
-    <div><div class="big">Zéro UI</div><div class="lbl"><b>Le citoyen ne cherche plus</b> · l'agent le guide jusqu'à la réponse ou au bon service</div></div>
-    <div><div class="big">Conversation</div><div class="lbl"><b>Une vraie conversation</b> · plusieurs échanges, le contexte est gardé d'une question à l'autre</div></div>
-    <div><div class="big">Escalade</div><div class="lbl"><b>Tracée jusqu'au service compétent</b> · avec l'historique, et un accusé de réception au citoyen</div></div>
-    <div><div class="big">Pilotage</div><div class="lbl"><b>Les demandes citoyennes mesurées</b> · volumes, escalades et retours pour décider où agir</div></div>
+    <div><div class="big">Conversation</div><div class="lbl"><b>Une vraie conversation multitour</b> · le contexte est conservé d'une question à l'autre</div></div>
+    <div><div class="big">Escalade</div><div class="lbl"><b>Transmission tracée au service compétent</b> · avec l'historique et un accusé de réception</div></div>
+    <div><div class="big">Pilotage</div><div class="lbl"><b>Volumes, retours et escalades</b> · pour comprendre les demandes et améliorer le service</div></div>
+    <div><div class="big">Zéro UI</div><div class="lbl"><b>Le citoyen ne cherche plus dans les rubriques</b> · l'agent le guide vers la réponse ou le bon service</div></div>
   </div>
-  <div class="assets"><span>Déploiement rapide, sans refonte SI, après onboarding</span><span>93/100 au banc DSI</span><span>Bancs qualité avant mise en service</span></div>
-  <div class="src"><span class="tag p">Bancs internes</span>Ni engagements contractuels ni SLA.</div>
+  <div class="deploy">Déploiement en quelques jours après onboarding et audit, sans refonte SI !</div>
+  <div class="src">Délai indicatif constaté sur nos déploiements, ni engagement contractuel ni SLA.</div>
   <div class="foot"><span class="brand">Mair<span>IA</span></span><span>07 / 12</span></div>
 </section>
 
-<section style="--p:66.67%" class="slide">
+<section style="--p:66.67%" class="slide s-mkt">
   <div class="eyebrow">Marché</div>
   <h2>Un marché national. <em>Une première cible claire.</em></h2>
   <div class="market">
-    <div class="rings"><div class="r1"><span>TAM</span></div><div class="r2"><span>SAM</span></div><div class="r3"><span>SOM</span></div></div>
+    <div><div class="rings"><div class="r1"><span>TAM</span></div><div class="r2"><span>SAM</span></div><div class="r3"><span>SOM</span></div></div>
+    <div class="lex"><span><b>TAM</b> marché total adressable</span><span><b>SAM</b> segment initial ciblé</span><span><b>SOM</b> part de marché visée</span></div></div>
     <div class="mk">
       <div class="mrow"><div class="big">36 127</div><div><b>communes et EPCI à fiscalité propre</b><span>34 875 communes + 1 252 EPCI · DGCL 2026</span></div></div>
       <div class="mrow"><div class="big">5 025</div><div><b>communes de 2 000 à 19 999 habitants</b><span>cœur de cible initial · DGCL 2026, fiche 2.3a</span></div></div>
-      <div class="mrow"><div class="big">200–300</div><div><b>collectivités actives visées fin 2028</b><span><span class="tag a">Ambition</span>objectif du fondateur, pas une prévision du BP</span></div></div>
-      <div class="reading">Notre ambition 2028 représente <b>moins de 1 %</b> du marché national.</div>
+      <div class="mrow"><div class="big">200–300</div><div><b>collectivités fin 2028 : premier objectif de déploiement</b><span><span class="tag a">Ambition</span>construit avec une organisation encore portée par son fondateur</span></div></div>
+      <div class="reading">Démarrage territorial : <b>l'Aube, puis le Grand Est</b>. Ce premier palier représente moins de 1 % du marché national ; l'accompagnement, le recrutement et le financement peuvent accélérer cette trajectoire.</div>
     </div>
   </div>
   <div class="src">DGCL, <i>Les collectivités locales en chiffres 2026</i>, chapitre 2, au 1er janvier 2026.</div>
@@ -307,6 +339,10 @@ h2 em,h1 em{font-style:normal;color:var(--gold)}
 .tier.hl{background:var(--navy);border-color:var(--navy)}.tier.hl .big,.tier.hl .hab{color:#fff}.tier.hl .per,.tier.hl .set{color:#C7CCE6;border-color:#3A4585}
 .pilot{margin-top:30px;display:flex;gap:28px;align-items:baseline;background:var(--gold-soft);border-radius:18px;padding:24px 32px}
 .pilot b{font-family:var(--display);font-size:32px;color:var(--navy);white-space:nowrap}.pilot span{font-size:24px;color:#5c4a17}
+.pfirst{margin-top:40px;align-items:center}.pfirst b{font-size:40px}.pfirst span{font-size:27px;color:var(--navy);font-weight:600}.pfirst small{display:block;font-size:20px;font-weight:400;color:#5c4a17;margin-top:4px}
+.then{margin-top:30px;font-size:16px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:var(--gold)}
+.s-biz .tiers{margin-top:14px}.s-biz .tier{padding:26px 30px}.s-biz .tier .big{font-size:72px}.s-biz .tier .hab{margin-top:14px}.s-biz .tier .set{margin-top:12px;padding-top:12px}
+.techno{position:absolute;left:150px;bottom:92px;display:flex;align-items:center;gap:14px;font-family:var(--display);font-weight:700;font-size:22px;color:var(--navy)}.techno span{font-family:var(--body);font-size:15px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:#8A6D1F;background:var(--gold-soft);border-radius:6px;padding:7px 12px}
 .trac{display:grid;grid-template-columns:1.1fr 1fr;gap:36px;margin-top:48px}
 .hero{background:var(--navy);border-radius:24px;padding:40px 44px;color:#fff}
 .hero h3{font-family:var(--display);font-size:40px;line-height:1.15}
@@ -355,16 +391,17 @@ h2 em,h1 em{font-style:normal;color:var(--gold)}
 .pslide .plink{font-family:var(--display);font-weight:700;font-size:30px;letter-spacing:0;text-transform:none;color:var(--gold);text-decoration:underline;text-underline-offset:8px;text-decoration-thickness:2px}.pslide .eyebrow{margin:0}.pposters{display:flex;gap:40px}.pposters img{width:300px;height:533px;object-fit:cover;border-radius:22px}}
 </style>
 
-<section style="--p:75.00%" class="slide">
+<section style="--p:75.00%" class="slide s-biz">
   <div class="eyebrow">Modèle économique · grille 2026 active</div>
   <h2>Un SaaS <em>accessible</em>, pensé pour se répliquer.</h2>
+  <div class="pilot pfirst"><b>Pilote 1 mois · 690 € HT</b><span>Tester MairIA sur son territoire, avant de s'engager dans la durée.<small>En conditions réelles, déduit du setup en cas de poursuite.</small></span></div>
+  <div class="then">Puis l'abonnement mensuel</div>
   <div class="tiers">
     <div class="tier"><small>XS</small><div class="big">290<span class="u">€</span></div><div class="per">HT / mois</div><div class="hab">Généralement moins de 10 000 hab.</div><div class="set">Setup 690 € HT</div></div>
     <div class="tier"><small>S</small><div class="big">490<span class="u">€</span></div><div class="per">HT / mois</div><div class="hab">Généralement 10 000 à 30 000 hab.</div><div class="set">Setup 990 € HT</div></div>
     <div class="tier hl"><small>M</small><div class="big">790<span class="u">€</span></div><div class="per">HT / mois</div><div class="hab">Généralement 30 000 à 100 000 hab.</div><div class="set">Setup 1 990 € HT</div></div>
     <div class="tier"><small>L</small><div class="big">1 190<span class="u">€</span></div><div class="per">HT / mois</div><div class="hab">Généralement plus de 100 000 hab.</div><div class="set">Setup 2 990 € HT</div></div>
   </div>
-  <div class="pilot"><b>Pilote 1 mois · 690 € HT</b><span>en conditions réelles, déduit du setup en cas de poursuite.</span></div>
   <div class="src">Le palier est fixé à l'onboarding selon l'usage et le périmètre ; les tranches d'habitants sont indicatives. Achat sur bon de commande, facturation Chorus Pro.</div>
   <div class="foot"><span class="brand">Mair<span>IA</span></span><span>09 / 12</span></div>
 </section>
@@ -392,6 +429,7 @@ h2 em,h1 em{font-style:normal;color:var(--gold)}
       <div class="r"><b>Deux communes</b><span>démonstrateurs · relais territorial</span></div>
     </div>
   </div>
+  <div class="techno"><span>Accompagnement entrepreneurial</span>Technopole de l'Aube</div>
   <div class="foot"><span class="brand">Mair<span>IA</span></span><span>10 / 12</span></div>
 </section>
 
