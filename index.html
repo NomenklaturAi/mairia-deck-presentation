@@ -115,6 +115,9 @@ h2 em,h1 em{font-style:normal;color:var(--gold)}
 .s-lib .media{aspect-ratio:2008/1440;width:100%;box-shadow:none}
 .s-lib .media.shot{aspect-ratio:1200/1725;height:860px;width:auto;justify-self:center;background:none}
 .s-lib .media.v{aspect-ratio:750/1110;width:570px;justify-self:center}
+.s-lib .lib-slot{display:flex;justify-content:center;align-items:center;min-width:0}
+.s-lib .lib-still{display:none}.s-lib .lib-motion{width:100%}.s-lib .lib-motion video{transform:translateX(1.3%) scale(1.03)}
+@media print{.s-lib .lib-motion{display:none!important}.s-lib .lib-still{display:block!important}}
 </style>
 
 <section style="--p:8.33%" class="slide s-cover">
@@ -163,12 +166,11 @@ h2 em,h1 em{font-style:normal;color:var(--gold)}
     </div>
     <div class="nums">
       <div class="k">Côté services · Troyes et TCM</div>
-      <div><div class="big" style="font-size:64px">Standard</div><div class="lbl"><b>sollicitations récurrentes</b> · accueil et état civil, Ville de Troyes</div></div>
-      <div><div class="big" style="font-size:64px">Familles</div><div class="lbl"><b>demandes répétées</b> · Pôle Famille, par téléphone et par courriel</div></div>
-      <div><div class="big" style="font-size:64px">Déchets</div><div class="lbl"><b>questions récurrentes</b> · collecte et déchèteries, Troyes Champagne Métropole</div></div>
+      <div><div class="big">250</div><div class="lbl"><b>appels par jour</b> · standard et état civil, Ville de Troyes</div></div>
+      <div><div class="big">75</div><div class="lbl"><b>appels par jour</b> · Pôle Famille, et 10 000 courriels par an</div></div>
+      <div><div class="big">≈ 800</div><div class="lbl"><b>appels par mois</b> · déchets, Troyes Champagne Métropole<small class="calc">Moyenne mensuelle calculée à partir de 9 613 appels annuels déclarés.</small></div></div>
     </div>
   </div>
-  <div class="src"><span class="tag p">Déclaré</span>Constat partagé par les services de la Ville de Troyes et de TCM lors du cadrage (juillet 2026). Aucun gain de temps mesuré n'est revendiqué.</div>
   <div class="foot"><span class="brand">Mair<span>IA</span></span><span>03 / 12</span></div>
 </section>
 
@@ -184,7 +186,10 @@ h2 em,h1 em{font-style:normal;color:var(--gold)}
       </ul>
       <div class="chain"><span>Question citoyenne</span><i>→</i><span>Réponse MairIA</span><i>→</i><span>Appel potentiellement évité</span><i>→</i><span>Temps d'accueil libéré</span></div>
     </div>
-    <div class="media shot"><img src="media/widget-accueil-troyes.jpg" alt="Assistant IA de la Ville de Troyes, écran d'accueil"></div>
+    <div class="lib-slot">
+      <div class="media shot lib-still"><img src="media/widget-accueil-troyes.jpg" alt="Assistant IA de la Ville de Troyes, écran d'accueil"></div>
+      <div class="media lib-motion" id="m-lib" aria-label="Démonstration animée de l'assistant IA de la Ville de Troyes"></div>
+    </div>
   </div>
   <div class="foot"><span class="brand">Mair<span>IA</span></span><span>04 / 12</span></div>
 </section>
@@ -318,7 +323,6 @@ h2 em,h1 em{font-style:normal;color:var(--gold)}
     <div><div class="big">Zéro UI</div><div class="lbl"><b>Le citoyen ne cherche plus dans les rubriques</b> · l'agent le guide vers la réponse ou le bon service</div></div>
   </div>
   <div class="deploy">Déploiement en quelques jours après onboarding et audit, sans refonte SI !</div>
-  <div class="src">Délai indicatif constaté sur nos déploiements, ni engagement contractuel ni SLA.</div>
   <div class="foot"><span class="brand">Mair<span>IA</span></span><span>07 / 12</span></div>
 </section>
 
@@ -404,7 +408,7 @@ h2 em,h1 em{font-style:normal;color:var(--gold)}
 .ph-sign .cta2{font-size:22px;color:#9EA6CF;margin-top:14px}
 .ph-sign .cta-row{display:flex;align-items:center;gap:44px;margin-top:24px}
 .ph-sign .cta-txt{display:flex;flex-direction:column;align-items:flex-end;text-align:right;text-decoration:none}.ph-sign .cta-txt b{font-size:32px;color:#fff;font-weight:700}.ph-sign .cta-txt span{font-size:22px;color:#9EA6CF;margin-top:6px}
-.ph-sign .qr{display:block;background:#fff;border-radius:16px;padding:10px;line-height:0}.ph-sign .qr img{width:220px;height:220px;display:block}
+.ph-sign .qr{display:block;background:#fff;border-radius:16px;padding:10px;line-height:0}.ph-sign .qr img{width:165px;height:165px;display:block}
 .ph-sign .contact{bottom:30px;font-size:22px}
 .pslide{display:none}
 @media print{.pslide{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:46px;width:1920px;height:1080px;background:#0E1230;break-after:page;color:#9EA6CF;font-size:22px;letter-spacing:.1em;text-transform:uppercase}
@@ -442,13 +446,13 @@ h2 em,h1 em{font-style:normal;color:var(--gold)}
     </div>
     <div class="pipe">
       <div class="k"><span class="tag o">Pipeline</span>en discussion, aucun contrat signé</div>
-      <div class="r"><b>Commune</b><span>intérêt du maire · démonstration planifiée</span></div>
-      <div class="r"><b>Commune</b><span>démonstration présentée · calendrier budgétaire</span></div>
-      <div class="r"><b>Commune</b><span>pilote demandé · cadrage en cours</span></div>
-      <div class="r"><b>Commune</b><span>échange avec le service communication · démonstration demandée</span></div>
-      <div class="r"><b>Commune</b><span>contact commercial avec un adjoint au maire</span></div>
-      <div class="r"><b>Intercommunalité</b><span>opportunité intercommunale</span></div>
-      <div class="r"><b>Deux communes</b><span>démonstrateurs · relais territorial</span></div>
+      <div class="r"><b>Sézanne</b><span>intérêt du maire · démonstration planifiée</span></div>
+      <div class="r"><b>Châtillon</b><span>démonstration présentée · calendrier budgétaire</span></div>
+      <div class="r"><b>Le Plessis-Bouchard</b><span>pilote demandé · cadrage en cours</span></div>
+      <div class="r"><b>Vannes</b><span>échange avec le service communication · démonstration demandée</span></div>
+      <div class="r"><b>Sainte-Savine</b><span>contact commercial avec un adjoint au maire</span></div>
+      <div class="r"><b>Pays Dunois</b><span>opportunité intercommunale</span></div>
+      <div class="r"><b>Nord · Capinghem, Fourmies</b><span>démonstrateurs · relais territorial</span></div>
     </div>
   </div>
   <div class="techno"><span>Accompagnement entrepreneurial</span>Technopole de l'Aube</div>
@@ -476,7 +480,6 @@ h2 em,h1 em{font-style:normal;color:var(--gold)}
       <div class="r"><b>Financement</b><span>financer la réplication</span></div>
     </div>
   </div>
-  <div class="src"><span class="tag a">Ambition</span>Séquence visée, pas des engagements acquis. MairIA SASU en cours de création.</div>
   <div class="foot"><span class="brand">Mair<span>IA</span></span><span>11 / 12</span></div>
 </section>
 
