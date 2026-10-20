@@ -1,6 +1,6 @@
 <meta charset="utf-8">
 <meta name="robots" content="noindex, nofollow, noarchive">
-<title>MairIA Deck Presentation</title>
+<title>MairIA · IA\PERO</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Syne:wght@600;700;800&display=swap">
@@ -68,321 +68,354 @@ h2 em,h1 em{font-style:normal;color:var(--gold)}
 @media (prefers-reduced-motion:reduce){.slide{transition:none}.on .tri i{animation:none}}
 </style>
 <main class="deck"><style>
+/* V2 IA\PERO : une idée par slide, pas de nom de collectivité à l'écran. */
 .s-cover{justify-content:center}
 .s-cover .wm{font-family:var(--display);font-weight:800;font-size:220px;letter-spacing:-.035em;line-height:.9;color:var(--navy)}
 .s-cover .sub{font-family:var(--display);font-weight:700;font-size:62px;color:var(--navy);margin-top:48px}
 .s-cover .band{align-self:flex-start;margin-top:40px;background:var(--night);border-radius:18px;padding:24px 38px 22px}
 .s-cover .band .t-lib{color:#8AA2F2}.s-cover .band .t-sec{color:#FBF8F1}.s-cover .band .t-pil{color:#EF6B70}
 .s-cover::after{content:"";position:absolute;right:-220px;top:120px;width:820px;height:820px;border-radius:50%;border:2px solid var(--line);box-shadow:0 0 0 100px rgba(46,58,122,.025),0 0 0 200px rgba(46,58,122,.02)}
-.s-cover .by{position:absolute;left:150px;bottom:110px;font-size:26px;color:var(--muted)}.s-cover .by b{color:var(--navy);font-weight:600}
-.story{display:grid;grid-template-columns:1fr 1fr;gap:90px;margin-top:40px;align-items:start}
-.when{font-family:var(--display);font-weight:800;font-size:40px;color:var(--gold);margin-bottom:28px}
-.tabs{display:flex;flex-direction:column;gap:14px}
-.tabs div{background:#2A3570;border:1px solid #3A4585;border-radius:12px;padding:16px 22px;font-size:25px;color:#DCE0F2;display:flex;justify-content:space-between}
-.tabs div small{color:#9EA6CF;font-size:19px}
-.tabs .shut{background:#3B2230;border-color:#7A3A48;color:#F6C9CF}
-.calls{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-.calls i{font-style:normal;height:92px;border-radius:14px;background:#2A3570;border:1px solid #3A4585;display:flex;align-items:center;justify-content:center;font-size:34px;color:#DCE0F2}
-.s-cas .cas{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:50px}
-.s-cas .case{background:#2A3570;border:1px solid #3A4585;border-radius:22px;padding:36px 40px}
-.s-cas .when{font-size:24px;margin-bottom:12px}
-.s-cas h3{font-family:var(--display);font-weight:700;font-size:40px;line-height:1.1;color:#fff}
-.s-cas .case p{font-size:23px;line-height:1.45;color:#DCE0F2;margin-top:12px}
-.s-cas .qs{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}.s-cas .qs span{border:1.5px solid var(--gold);color:#F0D98C;border-radius:30px;padding:8px 16px;font-size:19px;font-weight:600}
-.s-cas .cons{margin-top:50px;border-left:4px solid var(--gold);padding-left:28px}
-.s-cas .big1{font-family:var(--display);font-weight:700;font-size:30px;line-height:1.25;color:#fff}.s-cas .big1 b{color:var(--gold);font-weight:700}
-.s-cas .sub1{font-size:21px;line-height:1.45;color:#9EA6CF;margin-top:10px}
-.petites{position:absolute;left:150px;bottom:96px;font-size:24px;color:#9EA6CF}.petites b{color:#DCE0F2;font-weight:600}
-.same{font-family:var(--display);font-weight:700;font-size:40px;line-height:1.2;color:#fff;margin-top:40px}.same b{color:var(--gold)}
-.prob{display:grid;grid-template-columns:1.05fr 1fr;gap:80px;margin-top:44px;align-items:center}
-.scatter{position:relative;height:500px}
-.scatter .q{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:520px;background:var(--navy);color:#fff;font-family:var(--display);font-weight:700;font-size:30px;line-height:1.3;padding:30px 36px;border-radius:22px;text-align:center;z-index:2}
-.frag{position:absolute;background:#fff;border:1px dashed #C4C9DD;color:var(--muted);font-size:21px;padding:12px 20px;border-radius:12px;white-space:nowrap}
-.f1{left:0;top:40px;transform:rotate(-3deg)}.f2{right:0;top:20px;transform:rotate(2deg)}.f3{left:-10px;top:400px;transform:rotate(2deg)}
-.f4{right:20px;top:410px;transform:rotate(-2deg)}.f5{left:250px;top:-40px;transform:rotate(-1deg)}.f6{left:230px;bottom:-40px;transform:rotate(1.5deg)}
-.nums{display:flex;flex-direction:column;gap:30px;border-left:2px solid var(--line);padding-left:60px}
-.nums .k{font-size:17px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:var(--gold)}
-.nums .big{font-size:100px}.nums .calc{display:block;font-size:16px;color:var(--muted);margin-top:4px}.nums .lbl{margin-top:6px;font-size:22px}
-.pill-grid{display:grid;grid-template-columns:720px 1fr;gap:70px;align-items:center;flex:1}
-.pill-grid ul{list-style:none;display:flex;flex-direction:column;gap:22px;margin-top:44px}
-.pill-grid li{font-size:29px;line-height:1.35;font-weight:300;padding-left:30px;position:relative}
-.pill-grid li::before{content:"";position:absolute;left:0;top:15px;width:12px;height:12px;border-radius:50%;background:var(--gold)}
-.pill-grid li b{font-weight:600;color:var(--navy)}
-.s-lib .pill-grid ul{gap:26px;margin-top:40px}.s-lib .pill-grid li b{display:block;font-family:var(--display);font-weight:700;font-size:34px}
-.s-lib .pill-grid li small{display:block;font-size:24px;line-height:1.4;color:var(--muted);margin-top:6px}
-.chain{display:flex;flex-wrap:wrap;gap:8px 10px;align-items:center;margin-top:40px;font-size:19px;font-weight:600;color:var(--navy)}
-.chain span{background:var(--tint);border-radius:30px;padding:9px 16px}.chain span:last-child{background:var(--gold);}.chain i{font-style:normal;color:var(--gold);font-weight:700}
-.s-lib .media{aspect-ratio:2008/1440;width:100%;box-shadow:none}
-.s-lib .media.shot{aspect-ratio:1200/1725;height:860px;width:auto;justify-self:center;background:none}
-.s-lib .media.v{aspect-ratio:750/1110;width:570px;justify-self:center}
-.s-lib .lib-slot{display:flex;justify-content:center;align-items:center;min-width:0}
-.s-lib .lib-still{display:none}.s-lib .lib-motion{width:100%}.s-lib .lib-motion video{transform:translateX(1.3%) scale(1.03)}
-@media print{.s-lib .lib-motion{display:none!important}.s-lib .lib-still{display:block!important}}
+/* 02 · situation */
+.s-sit .sit{display:grid;grid-template-columns:1fr 560px;gap:110px;align-items:center;flex:1}
+.s-sit h2{font-size:80px;line-height:1.04}
+.s-sit .qs{display:flex;flex-wrap:wrap;gap:14px;margin-top:54px}
+.s-sit .qs span{border:2px solid var(--gold);color:#F0D98C;border-radius:40px;padding:12px 24px;font-size:27px;font-weight:600}
+.s-sit .cons{margin-top:56px;border-left:6px solid var(--gold);padding-left:34px;font-family:var(--display);font-weight:700;font-size:52px;line-height:1.15;color:#fff}
+.s-sit .cons b{color:var(--gold);font-weight:700}
+.door{background:#2A3570;border:1px solid #3A4585;border-radius:28px;padding:44px 46px;color:#DCE0F2}
+.door .k{font-size:18px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:#9EA6CF}
+.door .h{font-family:var(--display);font-weight:800;font-size:46px;color:#fff;margin-top:14px}
+.door .row{display:flex;justify-content:space-between;font-size:27px;padding:16px 0;border-top:1px solid #3A4585}
+.door .row:first-of-type{margin-top:26px}
+.door .row.off{color:#7E87B5}.door .row.off small{color:#F6C9CF;background:#3B2230;border-radius:8px;padding:2px 12px;font-size:20px}
+.door .ring{margin-top:30px;display:flex;align-items:center;gap:16px;font-size:24px;color:#F6C9CF}
+.door .ring i{font-style:normal;width:46px;height:46px;border-radius:50%;background:#3B2230;border:1px solid #7A3A48;display:flex;align-items:center;justify-content:center;font-size:22px}
+/* 03 · produit */
+.s-prod{padding-top:90px}.s-prod h2{font-size:72px}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:44px;margin-top:40px}
+.card{border-radius:28px;padding:36px 44px 34px;display:flex;flex-direction:column}
+.card.web{background:#fff;border:1px solid var(--line);box-shadow:0 24px 60px rgba(34,44,94,.10)}
+.card.voc{background:var(--night);color:#DCE0F2}
+.card .nm{font-family:var(--display);font-weight:800;font-size:50px;line-height:1;color:var(--navy)}
+.card.voc .nm{color:#fff}.card .nm>span:not(.tag){color:var(--gold)}
+.card .nm .tag{display:table;font-family:var(--body);font-size:16px;margin:16px 0 0}
+.card .what{font-size:26px;line-height:1.4;margin-top:16px;color:var(--muted)}.card .what b{color:var(--navy);font-weight:600}
+.card.voc .what{color:#C7CCE6}.card.voc .what b{color:#fff}
+.card .cvis{margin-top:auto;padding-top:22px}
+.chat{background:#FAFBFE;border:1px solid var(--line);border-radius:20px;overflow:hidden}
+.chat .wh{background:var(--navy);color:#fff;display:flex;gap:14px;align-items:center;padding:14px 20px;font-size:20px;font-weight:600}
+.chat .av{width:36px;height:36px;border-radius:50%;background:var(--gold);color:var(--navy);font-family:var(--display);font-weight:800;display:flex;align-items:center;justify-content:center;font-size:14px}
+.chat .wb{padding:18px 20px;display:flex;flex-direction:column;gap:12px}
+.chat .bu{align-self:flex-end;background:var(--navy);color:#fff;border-radius:18px 18px 4px 18px;padding:12px 18px;font-size:21px;line-height:1.35;max-width:84%}
+.chat .bb{background:#fff;border:1px solid var(--line);border-radius:18px 18px 18px 4px;padding:14px 18px;font-size:21px;line-height:1.4;max-width:94%}
+.chat .bb b{color:var(--navy)}
+.chat .src1{margin-top:10px;font-size:15px;color:#8A6D1F;background:var(--gold-soft);border-radius:8px;padding:6px 10px;display:inline-block}
+.call{background:#2A3570;border:1px solid #3A4585;border-radius:20px;padding:24px 28px}
+.call .top{display:flex;align-items:center;gap:18px}
+.call .ph{width:58px;height:58px;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center}
+.call .ph svg{width:28px;height:28px}
+.call .top b{display:block;font-size:24px;color:#fff}.call .top small{font-size:18px;color:#9EA6CF}
+.wave{display:flex;align-items:center;gap:6px;height:64px;margin:20px 0 14px}
+.wave i{display:block;width:8px;border-radius:4px;background:#8AA2F2}
+.on .wave i{animation:wv 1.1s ease-in-out infinite alternate}
+@keyframes wv{from{transform:scaleY(.35)}to{transform:scaleY(1)}}
+.call .say{font-size:22px;line-height:1.4;color:#DCE0F2;font-style:italic}
+.vexp{font-family:var(--display);font-weight:700;font-size:30px!important;color:#F0D98C!important;border-top:0!important}
+.exp{margin-top:18px;font-size:19px;line-height:1.4;color:#F0D98C;border-top:1px solid #3A4585;padding-top:14px}
+.cap2{margin-top:10px;font-size:15px;color:var(--muted)}
+.web-motion{height:390px;aspect-ratio:2008/1440;margin:0 auto;box-shadow:none}
+.lib-still{display:none}
+@media print{.lib-motion{display:none!important}.lib-still{display:block!important}}
+@media print{.card.web,.chat{box-shadow:none!important}.on .wave i{animation:none}}
+@media (prefers-reduced-motion:reduce){.on .wave i{animation:none}}
 </style>
 
-<section style="--p:8.33%" class="slide s-cover">
+<section style="--p:9.09%" class="slide s-cover">
   <div class="wm">Mair<span>IA</span></div>
   <div class="band"><p class="triad"><span class="t-lib">Libérez.</span><span class="t-sec">Sécurisez.</span><span class="t-pil">Pilotez.</span></p></div>
   <div class="sub">L'assistant IA des collectivités !</div>
   <div class="foot"><span class="brand">Mair<span>IA</span></span><span>mairia.fr</span></div>
 </section>
 
-<section style="--p:16.67%" class="slide dark s-cas">
-  <div class="eyebrow">Le point de départ</div>
-  <h2>Deux situations du quotidien. <em>Le même parcours compliqué.</em></h2>
-  <div class="cas">
-    <div class="case">
-      <div class="when">Mi-août · avant un voyage</div>
-      <h3>Passeport perdu.</h3>
-      <p>La mairie est ouverte, mais les équipes sont réduites pour l'été. Il faut refaire ses papiers, vite.</p>
-      <div class="qs"><span>Quelle démarche ?</span><span>Quels justificatifs ?</span><span>Quel service ?</span></div>
-    </div>
-    <div class="case">
-      <div class="when">Dimanche soir · avant la rentrée</div>
-      <h3>Inscription périscolaire oubliée.</h3>
-      <p>Le dossier est quelque part entre une rubrique du site, le portail famille et un règlement en PDF.</p>
+<section style="--p:18.18%" class="slide dark s-sit">
+  <div class="eyebrow">Une situation du quotidien</div>
+  <div class="sit">
+    <div>
+      <h2>Dimanche soir, veille de rentrée. <em>L'inscription périscolaire est oubliée.</em></h2>
       <div class="qs"><span>Quels papiers ?</span><span>Quel dossier ?</span><span>Où s'inscrire ?</span></div>
+      <p class="cons">L'information existe.<br><b>Mais elle est éparpillée.</b></p>
+    </div>
+    <div class="door" aria-label="Où chercher l'information">
+      <div class="k">Où chercher ?</div>
+      <div class="h">Cinq endroits</div>
+      <div class="row"><span>Site de la commune</span><span>rubrique ?</span></div>
+      <div class="row"><span>Portail famille</span><span>identifiant ?</span></div>
+      <div class="row"><span>Règlement intérieur</span><span>PDF, 12 pages</span></div>
+      <div class="row"><span>Site de l'agglomération</span><span>?</span></div>
+      <div class="row off"><span>Standard</span><small>Fermé le dimanche</small></div>
     </div>
   </div>
-  <div class="cons">
-    <p class="big1">L'information est souvent déjà en ligne. <b>La trouver mobilise citoyens et agents.</b></p>
-    <p class="sub1">À l'accueil, parfois une ou deux personnes face aux mêmes questions, jour après jour. Et dans les petites communes, parfois une seule permanence par semaine.</p>
-  </div>
-  <div class="foot"><span class="brand">Mair<span>IA</span></span><span>Scènes illustratives · 02 / 12</span></div>
+  <div class="foot"><span class="brand">Mair<span>IA</span></span><span>Scène illustrative · 02 / 11</span></div>
 </section>
 
-<section style="--p:25.00%" class="slide">
-  <div class="eyebrow">Le problème</div>
-  <h2>L'information existe.<br>Mais elle est <em>dispersée</em>.</h2>
-  <div class="prob">
-    <div class="scatter">
-      <div class="q">« Je ne peux pas emporter mes encombrants. Comment faire ? »</div>
-      <div class="frag f5">Site de la ville</div>
-      <div class="frag f2">Site de l'intercommunalité</div>
-      <div class="frag f1">PDF de règlement, 12 pages</div>
-      <div class="frag f3">Portail thématique</div>
-      <div class="frag f4">service-public.fr</div>
-      <div class="frag f6">Standard téléphonique</div>
+<section style="--p:27.27%" class="slide s-prod">
+  <div class="eyebrow">La solution</div>
+  <h2>Concrètement, <em>MairIA, c'est quoi ?</em></h2>
+  <div class="duo">
+    <div class="card web">
+      <div class="nm">Mair<span>IA</span>&nbsp;Web <span class="tag p">Opérationnel</span></div>
+      <p class="what"><b>Un chatbot intelligent, intégré au site de la mairie.</b> Il répond aux habitants avec les sources officielles et les envoie vers le bon service.</p>
+      <div class="cvis">
+        <div class="media web-motion lib-motion" id="m-lib" aria-label="Démonstration animée de MairIA Web"></div>
+        <div class="media web-motion lib-still"><img src="media/motion-still-web.jpg" alt="MairIA Web, réponse de l'assistant sur le site d'une mairie"></div>
+      </div>
     </div>
-    <div class="nums">
-      <div class="k">Côté services · Troyes et TCM</div>
-      <div><div class="big">250</div><div class="lbl"><b>appels par jour</b> · standard et état civil, Ville de Troyes</div></div>
-      <div><div class="big">75</div><div class="lbl"><b>appels par jour</b> · Pôle Famille, et 10 000 courriels par an</div></div>
-      <div><div class="big">≈ 800</div><div class="lbl"><b>appels par mois</b> · déchets, Troyes Champagne Métropole<small class="calc">Moyenne mensuelle calculée à partir de 9 613 appels annuels déclarés.</small></div></div>
+    <div class="card voc">
+      <div class="nm">Mair<span>IA</span>&nbsp;Vocal <span class="tag p">Opérationnel</span></div>
+      <p class="what"><b>Un agent téléphonique IA.</b> Il répond aux questions courantes des habitants, même <b>sans site internet</b>, même en <b>permanence réduite</b>.</p>
+      <div class="cvis">
+        <div class="call" aria-label="Représentation d'un accueil téléphonique MairIA Vocal">
+          <div class="top"><div class="ph"><svg viewBox="0 0 24 24" fill="#1B2450" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg></div>
+            <div><b>Accueil téléphonique de la mairie</b><small>Appel en cours</small></div></div>
+          <div class="wave" aria-hidden="true"><i style="height:30%"></i><i style="height:70%;animation-delay:.1s"></i><i style="height:45%;animation-delay:.3s"></i><i style="height:90%;animation-delay:.2s"></i><i style="height:55%;animation-delay:.4s"></i><i style="height:80%;animation-delay:.15s"></i><i style="height:35%;animation-delay:.35s"></i><i style="height:65%;animation-delay:.05s"></i><i style="height:95%;animation-delay:.25s"></i><i style="height:50%;animation-delay:.45s"></i><i style="height:75%;animation-delay:.12s"></i><i style="height:40%;animation-delay:.32s"></i><i style="height:85%;animation-delay:.22s"></i><i style="height:30%;animation-delay:.42s"></i><i style="height:60%;animation-delay:.08s"></i><i style="height:45%;animation-delay:.28s"></i></div>
+          <p class="say">« Bonjour, vous êtes bien à l'accueil de la mairie. Que puis-je faire pour vous ? »</p>
+        </div>
+        <p class="exp vexp">Un premier accueil, même quand la mairie est fermée.</p>
+      </div>
     </div>
   </div>
-  <div class="foot"><span class="brand">Mair<span>IA</span></span><span>03 / 12</span></div>
+  <div class="foot"><span class="brand">Mair<span>IA</span></span><span>03 / 11</span></div>
 </section>
+<style>
+.pill-grid{display:grid;grid-template-columns:860px 1fr;gap:90px;align-items:center;flex:1}
+.pill-grid ul{list-style:none;display:flex;flex-direction:column;gap:34px;margin-top:50px}
+.pill-grid li{padding-left:34px;position:relative}
+.pill-grid li::before{content:"";position:absolute;left:0;top:18px;width:14px;height:14px;border-radius:50%;background:var(--gold)}
+.pill-grid li b{display:block;font-family:var(--display);font-weight:700;font-size:40px;color:var(--navy)}
+.pill-grid li small{display:block;font-size:27px;line-height:1.4;color:var(--muted);margin-top:6px}
+.clock{background:var(--night);border-radius:30px;padding:56px 56px 50px;color:#DCE0F2;text-align:center}
+.clock .big{color:#fff;font-size:170px}.clock .big span{color:var(--gold)}
+.clock p{font-size:30px;margin-top:18px;line-height:1.35}
+.flow{display:flex;flex-direction:column;gap:12px;margin-top:40px;text-align:left}
+.flow div{display:flex;align-items:center;gap:16px;font-size:24px;font-weight:600;color:#fff;background:#2A3570;border-radius:14px;padding:14px 22px}
+.flow div i{font-style:normal;color:var(--gold);font-family:var(--display);font-weight:800;width:28px}
+.flow div:last-child{background:var(--gold);color:var(--night)}.flow div:last-child i{color:var(--night)}
+.s-sec{padding-top:90px}
+.s-sec .proofs{display:grid;grid-template-columns:repeat(3,1fr);gap:50px;margin-top:40px}
+.s-sec .proofs div{border-top:3px solid var(--gold);padding-top:20px}
+.s-sec .proofs b{display:block;font-family:var(--display);font-weight:700;font-size:36px;color:var(--navy)}
+.s-sec .proofs span{display:block;font-size:25px;line-height:1.4;color:var(--muted);margin-top:10px}
+.s-sec .esc{display:grid;grid-template-columns:420px 1fr;gap:50px;align-items:center;margin-top:50px}
+.s-sec .crpa{font-size:28px;line-height:1.4;color:var(--navy)}.s-sec .crpa b{font-weight:700}
+.s-sec figure{margin:0}.s-sec figure img{display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--line);box-shadow:0 24px 60px rgba(34,44,94,.12)}
+.s-sec figcaption{margin-top:10px;font-size:17px;color:var(--muted)}
+.s-sec .crpa-x{margin-top:34px;font-size:20px;line-height:1.45;color:var(--muted);max-width:1500px}.s-sec .crpa-s b{color:var(--navy);font-weight:600}
+.dark.s-sec .t-sec{color:#FBF8F1}
+.dark.s-sec .proofs b{color:#fff}.dark.s-sec .proofs span{color:#C7CCE6}.dark.s-sec .proofs span strong{color:#F0D98C;font-weight:600}
+.dark.s-sec .crpa{color:#DCE0F2}.dark.s-sec .crpa b{color:#fff}
+.dark.s-sec figure img{border-color:#3A4585;box-shadow:none}.dark.s-sec figcaption{color:#9EA6CF}
+.s-pil .pgrid{display:grid;grid-template-columns:640px 1fr;gap:80px;align-items:center;flex:1}
+.s-pil .lead6{font-size:36px;line-height:1.35;font-weight:300;margin-top:40px}.s-pil .lead6 b{font-weight:600;color:var(--navy)}
+.s-pil .pl6{list-style:none;display:flex;flex-direction:column;gap:22px;margin-top:40px}
+.s-pil .pl6 li{font-size:28px;line-height:1.35;color:var(--muted);padding-left:30px;position:relative}
+.s-pil .pl6 li::before{content:"";position:absolute;left:0;top:13px;width:12px;height:12px;border-radius:50%;background:var(--gold)}
+.s-pil .pl6 li b{font-weight:600;color:var(--navy)}
+.s-pil figure{margin:0}.s-pil figure img{display:block;width:100%;height:auto;border-radius:16px;border:1px solid var(--line);box-shadow:0 24px 60px rgba(34,44,94,.14)}
+.s-pil figcaption{margin-top:12px;font-size:17px;line-height:1.4;color:var(--muted)}.s-pil figcaption b{color:var(--navy);font-weight:600}
+.trac{display:grid;grid-template-columns:1.25fr 1fr;gap:44px;margin-top:50px}
+.hero{background:var(--navy);border-radius:26px;padding:44px 50px;color:#fff}
+.hero h3{font-family:var(--display);font-size:44px;line-height:1.15;margin-top:18px}
+.facts{margin-top:34px;display:flex;flex-direction:column;gap:24px}
+.facts div{border-left:4px solid var(--gold);padding-left:24px}
+.facts b{display:block;font-size:29px;font-weight:600}.facts span{font-size:23px;color:#C7CCE6}
+.pipe2{background:#fff;border:1px solid var(--line);border-radius:26px;padding:44px 50px;display:flex;flex-direction:column}
+.pipe2 .big{font-size:170px;margin-top:20px}
+.pipe2 b{display:block;font-family:var(--display);font-size:38px;color:var(--navy);margin-top:16px;line-height:1.15}
+.pipe2 span.l{font-size:22px;color:var(--muted);margin-top:10px;line-height:1.4}
+.pipe2 .names{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.pipe2 .names span{font-family:var(--display);font-weight:700;font-size:24px;color:var(--navy);background:var(--tint);border-radius:30px;padding:10px 20px}
+.trac2{display:grid;grid-template-columns:1.35fr 1fr;gap:40px;margin-top:46px}
+.pipe3{background:var(--navy);border-radius:26px;padding:40px 48px;color:#fff}
+.pipe3 h3,.first h3{font-family:var(--display);font-size:42px;line-height:1.12}
+.pipe3 .l{font-size:21px;color:#C7CCE6;margin-top:10px}
+.names2{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:repeat(5,auto);grid-auto-flow:column;gap:12px 20px;margin-top:28px}
+.names2 span em{font-style:normal;font-family:var(--body);font-weight:500;font-size:20px;color:#C7CCE6}
+.names2 span{font-family:var(--display);font-weight:700;font-size:27px;color:#fff;border-left:4px solid var(--gold);padding:6px 0 6px 18px}
+.first{background:#fff;border:1px solid var(--line);border-radius:26px;padding:40px 44px}
+.first h3{color:var(--navy);font-size:36px}
+.facts2{margin-top:28px;display:flex;flex-direction:column;gap:20px}
+.facts2 div{border-left:4px solid var(--gold);padding-left:20px}
+.facts2 b{display:block;font-size:25px;font-weight:600;color:var(--navy)}.facts2 span{font-size:20px;color:var(--muted)}
+.techno{position:absolute;left:150px;bottom:92px;display:flex;align-items:center;gap:14px;font-family:var(--display);font-weight:700;font-size:24px;color:var(--navy)}.techno span{font-family:var(--body);font-size:15px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:#8A6D1F;background:var(--gold-soft);border-radius:6px;padding:7px 12px}
+@media print{.s-sec figure img,.s-pil figure img{box-shadow:none!important}}
+</style>
 
-<section style="--p:33.33%" class="slide s-lib">
+<section style="--p:36.36%" class="slide s-lib">
   <div class="pill-grid">
     <div>
       <div class="pillar t-lib">Libérez.</div>
       <div class="tri paper"><i class="b-lib"></i></div>
       <ul>
-        <li><b>Une réponse, sans attendre.</b><small>MairIA accompagne plusieurs citoyens simultanément, 24&nbsp;h/24 et 7&nbsp;j/7.</small></li>
-        <li><b>Moins d'appels répétitifs.</b><small>Le citoyen qui obtient sa réponse n'a plus besoin d'appeler le standard pour cette question.</small></li>
-        <li><b>Plus de temps pour l'humain.</b><small>Les agents se concentrent sur les situations qui demandent leur expertise.</small></li>
+        <li><b>Une réponse, sans attendre.</b><small>Plusieurs habitants à la fois, à toute heure.</small></li>
+        <li><b>Plus de temps pour l'humain.</b><small>Les agents se concentrent sur les cas complexes.</small></li>
+        <li><b>Demandes répétitives absorbées.</b><small>MairIA répond. L'habitant n'a plus besoin d'appeler.</small></li>
       </ul>
-      <div class="chain"><span>Question citoyenne</span><i>→</i><span>Réponse MairIA</span><i>→</i><span>Appel potentiellement évité</span><i>→</i><span>Temps d'accueil libéré</span></div>
     </div>
-    <div class="lib-slot">
-      <div class="media shot lib-still"><img src="media/widget-accueil-troyes.jpg" alt="Assistant IA de la Ville de Troyes, écran d'accueil"></div>
-      <div class="media lib-motion" id="m-lib" aria-label="Démonstration animée de l'assistant IA de la Ville de Troyes"></div>
+    <div class="clock">
+      <div class="big">24<span>/</span>7</div>
+      <p>Les questions n'attendent pas l'ouverture.</p>
+      <div class="flow"><div><i>1</i>Question de l'habitant</div><div><i>2</i>Réponse sourcée</div><div><i>3</i>Agent libéré</div></div>
     </div>
   </div>
-  <div class="foot"><span class="brand">Mair<span>IA</span></span><span>04 / 12</span></div>
+  <div class="foot"><span class="brand">Mair<span>IA</span></span><span>04 / 11</span></div>
+</section>
+
+<section style="--p:45.45%" class="slide dark s-sec">
+  <div class="pillar t-sec">Sécurisez.</div>
+  <div class="tri"><i class="b-sec"></i></div>
+  <div class="proofs">
+    <div><b>Sources officielles</b><span>Les réponses citent la page officielle.</span></div>
+    <div><b>Souveraineté</b><span>IA française Mistral AI, cloud français.</span></div>
+    <div><b>Conformité</b><span>Conçu pour les obligations du <strong>CRPA</strong>.</span></div>
+  </div>
+  <div class="esc">
+    <p class="crpa">L'IA ne sait pas ? <b>Un agent prend le relais.</b> Demande tracée, délai légal suivi.</p>
+    <figure><img src="media/tickets-crpa-troyes.jpg" alt="Tableau de bord MairIA, suivi des demandes transmises à un agent"><figcaption>Tableau de bord MairIA · ticket de test, référence masquée. CRPA : Code des relations entre le public et l'administration.</figcaption></figure>
+  </div>
+  <div class="foot"><span class="brand">Mair<span>IA</span></span><span>05 / 11</span></div>
+</section>
+
+<section style="--p:54.55%" class="slide s-pil">
+  <div class="pgrid">
+    <div>
+      <div class="pillar t-pil">Pilotez.</div>
+      <div class="tri paper"><i class="b-pil"></i></div>
+      <p class="lead6">Des indicateurs pour les élus. <b>Des décisions pour mieux servir les habitants.</b></p>
+      <ul class="pl6">
+        <li><b>Les demandes</b>, thème par thème</li>
+        <li><b>Ce qui bloque</b> : démarches à clarifier</li>
+        <li><b>Ce qui marche</b> : satisfaction mesurée</li>
+        <li><b>Un bilan prêt</b> pour le conseil municipal</li>
+      </ul>
+    </div>
+    <figure><img src="media/dashboard-pilote-troyes.jpg" alt="Tableau de bord MairIA d'une collectivité pilote, questions masquées">
+      <figcaption><b>Tableau de bord MairIA · collectivité pilote · tests métiers 2026.</b> Environnement de tests métiers, avant ouverture au grand public. Questions masquées.</figcaption></figure>
+  </div>
+  <div class="foot"><span class="brand">Mair<span>IA</span></span><span>06 / 11</span></div>
+</section>
+
+<section style="--p:63.64%" class="slide s-trac">
+  <div class="eyebrow">Traction</div>
+  <h2>Un projet déjà <em>éprouvé sur le terrain.</em></h2>
+  <div class="trac2">
+    <div class="pipe3">
+      <h3>Collectivités en discussion</h3>
+      <p class="l">Échanges en cours, à différents stades. Aucun contrat signé à ce jour.</p>
+      <div class="names2"><span>Bourg-en-Bresse <em>(01)</em></span><span>Capinghem <em>(59)</em></span><span>Châtillon <em>(92)</em></span><span>Fourmies <em>(59)</em></span><span>Le Plessis-Bouchard <em>(95)</em></span><span>Nice <em>(06)</em></span><span>Pays Dunois <em>(23)</em></span><span>Sainte-Savine <em>(10)</em></span><span>Sézanne <em>(51)</em></span><span>Vannes <em>(56)</em></span></div>
+    </div>
+    <div class="first">
+      <h3>Une première ville<br>et son agglomération</h3>
+      <div class="facts2">
+        <div><b>Premier achat public</b><span>bon de commande · juillet 2026</span></div>
+        <div><b>Première facture Chorus Pro</b><span>juillet 2026</span></div>
+        <div><b>Deux assistants opérés</b><span>mise en ligne soumise à validation de la collectivité</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="techno"><span>Accompagnement entrepreneurial</span>Technopole de l'Aube</div>
+  <div class="foot"><span class="brand">Mair<span>IA</span></span><span>07 / 11</span></div>
 </section>
 <style>
-.sec-grid{display:grid;grid-template-columns:600px 1fr;gap:80px;align-items:center;flex:1}
-.widget{background:#fff;border-radius:24px;box-shadow:0 30px 70px rgba(34,44,94,.16);overflow:hidden;border:1px solid var(--line)}
-.wh{background:var(--navy);color:#fff;display:flex;gap:16px;align-items:center;padding:18px 24px}
-.wh .av{width:44px;height:44px;border-radius:50%;background:var(--gold);color:var(--navy);font-family:var(--display);font-weight:800;display:flex;align-items:center;justify-content:center;font-size:17px}
-.wh b{display:block;font-size:22px}.wh small{font-size:16px;color:#C7CCE6}
-.wb{padding:24px;display:flex;flex-direction:column;gap:16px;background:#FAFBFE}
-.bu{align-self:flex-end;background:var(--navy);color:#fff;border-radius:18px 18px 4px 18px;padding:14px 20px;font-size:21px;line-height:1.4;max-width:84%}
-.bb{background:#fff;border:1px solid var(--line);border-radius:18px 18px 18px 4px;padding:18px 22px;font-size:21px;line-height:1.45;max-width:94%}
-.bb b{color:var(--navy)}
-.bb .s{margin-top:14px;font-size:16px;color:#8A6D1F;background:var(--gold-soft);border-radius:8px;padding:8px 12px;display:inline-block}
-.proofs{display:flex;flex-direction:column;gap:30px;margin-top:44px}
-.proofs div{display:grid;grid-template-columns:270px 1fr;gap:28px;align-items:baseline;border-top:1px solid var(--line);padding-top:22px}
-.proofs b{font-family:var(--display);font-weight:700;font-size:30px;color:var(--navy)}
-.proofs span{font-size:24px;line-height:1.4;color:var(--muted)}
-.proofs{gap:22px;margin-top:34px}.proofs div{padding-top:18px}
-.s-sec{padding-top:70px}
-.s-sec .sec-grid{flex:none;grid-template-columns:540px 1fr;gap:70px;align-items:center}
-.s-sec .pillar{font-size:100px}.s-sec .tri{margin-top:16px}
-.s-sec .wb{padding:18px;gap:12px}.s-sec .bu,.s-sec .bb{font-size:18px}.s-sec .bb .s{font-size:14px;margin-top:10px}.s-sec .wh{padding:14px 20px}.s-sec .wh b{font-size:20px}
-.s-sec .proofs{gap:12px;margin-top:24px}.s-sec .proofs div{grid-template-columns:250px 1fr;padding-top:12px}.s-sec .proofs b{font-size:25px}.s-sec .proofs span{font-size:20px}
-.crpa{display:grid;grid-template-columns:1fr 1010px;gap:40px;align-items:center;margin-top:26px;background:var(--tint);border-radius:18px;padding:20px 24px}
-.crpa p{font-size:21px;line-height:1.45;color:var(--navy)}.crpa b{font-weight:700}.crpa p small{display:block;margin-top:10px;font-size:17px;color:var(--muted)}
-.crpa figure{margin:0}.crpa img{display:block;width:1010px;height:auto;border-radius:10px;border:1px solid var(--line)}
-.crpa figcaption{margin-top:6px;font-size:14px;color:var(--muted)}
-.pil{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:50px}
-.pcol{border-radius:24px;padding:40px 44px}
-.pcol.now{background:#fff;border:1px solid var(--line)}
-.pcol.next{background:var(--night);color:#DCE0F2}
-.pcol .k{font-size:17px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:var(--gold);margin-bottom:26px}
-.pcol ul{list-style:none;display:flex;flex-direction:column;gap:22px}
-.pcol li{font-size:28px;line-height:1.35;padding-left:30px;position:relative}
-.pcol li::before{content:"";position:absolute;left:0;top:14px;width:12px;height:12px;border-radius:50%;background:var(--gold)}
-.pcol li b{font-weight:600;color:var(--navy)}.pcol.next li b{color:#fff}
-.pcol li small{display:block;font-size:20px;color:var(--muted);margin-top:4px}.pcol.next li small{color:#9EA6CF}
-.s-pil{padding-top:90px}
-.pil6{margin-top:26px;width:700px}
-.dash6{position:absolute;right:150px;top:100px;width:860px;margin:0}
-.lead6{font-size:32px;line-height:1.35;font-weight:300}.lead6 b{font-weight:600;color:var(--navy)}
-.pl6{list-style:none;display:flex;flex-direction:column;gap:18px;margin-top:34px}
-.pl6 li{font-size:24px;line-height:1.35;color:var(--muted);padding-left:28px;position:relative}
-.pl6 li::before{content:"";position:absolute;left:0;top:11px;width:11px;height:11px;border-radius:50%;background:var(--gold)}
-.pl6 li b{font-weight:600;color:var(--navy)}
-.vis6{margin-top:34px;background:var(--night);color:#DCE0F2;border-radius:16px;padding:20px 24px;font-size:21px;line-height:1.4}.vis6 .tag{background:#35407F;color:#DCE0F2}
-.dash6 img{display:block;width:860px;height:auto;border-radius:16px;border:1px solid var(--line);box-shadow:0 24px 60px rgba(34,44,94,.14)}
-@media print{.widget,.dash6 img,.media{box-shadow:none!important}}
-.dash6 figcaption{margin-top:12px;font-size:15px;line-height:1.4;color:var(--muted)}.dash6 figcaption b{color:var(--navy);font-weight:600}
-.moat{display:grid;grid-template-columns:1fr 1fr;gap:40px 90px;margin-top:50px}
-.moat .big{font-size:84px}
-.moat .lbl{font-size:21px}
-.moat.mech .big{font-size:64px}
-.deploy{margin-top:44px;align-self:flex-start;background:var(--navy);color:#fff;font-family:var(--display);font-weight:700;font-size:30px;border-radius:16px;padding:20px 32px}
-.assets{display:flex;gap:14px;flex-wrap:wrap;margin-top:44px}
-.assets span{font-family:var(--display);font-weight:700;font-size:19px;color:var(--navy);border:1.5px solid var(--navy);border-radius:40px;padding:12px 24px}
-.market{display:grid;grid-template-columns:500px 1fr;gap:90px;margin-top:40px;align-items:center}
-.rings{position:relative;width:480px;height:480px}
-.rings div{position:absolute;border-radius:50%;left:50%;bottom:0;transform:translateX(-50%);display:flex;justify-content:center;font-family:var(--display);font-weight:800;letter-spacing:.1em}
-.r1{width:480px;height:480px;background:var(--tint);color:var(--muted)}.r2{width:300px;height:300px;background:#C9CFEA;color:var(--navy)}
-.r3{width:120px;height:120px;background:var(--gold);color:var(--navy);align-items:center}
-.r1 span,.r2 span{margin-top:30px;font-size:21px}.r3 span{font-size:19px}
-.lex{display:flex;flex-direction:column;gap:6px;margin-top:22px;font-size:19px;color:var(--muted)}.lex b{display:inline-block;width:62px;font-family:var(--display);color:var(--navy)}
-.s-mkt .market{margin-top:24px}.s-mkt .rings{width:420px;height:420px}.s-mkt .r1{width:420px;height:420px}.s-mkt .r2{width:262px;height:262px}.s-mkt .r3{width:105px;height:105px}.s-mkt .mk{gap:26px}.s-mkt .reading{font-size:23px}
-.mk{display:flex;flex-direction:column;gap:34px}
-.mrow{display:grid;grid-template-columns:470px 1fr;gap:30px;align-items:center}
-.mrow .big{font-size:66px}
-.mrow b{display:block;font-size:25px;font-weight:600;line-height:1.3}
-.mrow span{font-size:19px;color:var(--muted)}
-.reading{margin-top:8px;background:var(--navy);color:#DCE0F2;border-radius:16px;padding:22px 28px;font-size:26px;line-height:1.4}.reading b{color:var(--gold)}
+.s-mkt .mk2{display:grid;grid-template-columns:1fr 520px;gap:70px;align-items:center;flex:1;padding-bottom:60px}
+.s-mkt .mk1{display:flex;flex-direction:column;justify-content:center;gap:30px}
+.mkside{display:flex;flex-direction:column;gap:22px}
+.mkside div{background:#fff;border:1px solid var(--line);border-left:6px solid var(--gold);border-radius:16px;padding:22px 28px}
+.mkside b{display:block;font-family:var(--display);font-weight:800;font-size:58px;color:var(--navy);line-height:1}
+.mkside span{display:block;font-size:23px;color:var(--muted);margin-top:8px}
+.s-mkt .approx{font-family:var(--display);font-weight:700;font-size:34px;color:var(--gold);margin-bottom:-18px}
+.mkside b i{font-style:normal;font-family:var(--body);font-weight:500;font-size:22px;color:var(--gold);margin-right:12px;vertical-align:middle}
+.mkside .one{background:var(--navy);border-color:var(--navy)}.mkside .one span{color:#DCE0F2;font-size:25px;margin:0;line-height:1.35}.mkside .one strong{color:var(--gold)}
+.s-mkt .mk1 .big{font-size:190px;letter-spacing:-.03em}
+.s-mkt .mk1 p{max-width:1000px;font-size:40px;line-height:1.3;font-family:var(--display);font-weight:700;color:var(--navy)}
+.s-mkt .mk1 p small{display:block;font-family:var(--body);font-weight:300;font-size:30px;color:var(--muted);margin-top:22px;line-height:1.4}
+.road{display:grid;grid-template-columns:1fr 1.25fr 1.6fr;margin-top:56px;border-radius:22px;overflow:hidden}
+.road div{padding:34px 38px;background:var(--tint)}.road div:nth-child(2){background:#D9DDF0}.road div:nth-child(3){background:var(--navy);color:#fff}
+.road b{display:block;font-family:var(--display);font-size:48px;color:var(--navy)}.road div:nth-child(3) b{color:#fff}
+.road span{font-size:24px;color:var(--muted)}.road div:nth-child(3) span{color:#C7CCE6}
+.vis{display:grid;grid-template-columns:1.2fr 1fr;gap:44px;margin-top:44px}
+.founder{background:#fff;border:1px solid var(--line);border-radius:24px;padding:36px 42px}
+.founder h3{font-family:var(--display);font-size:36px;color:var(--navy)}
+.founder .path{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.founder .path span{font-size:22px;background:var(--tint);color:var(--navy);border-radius:30px;padding:8px 18px}
+.founder .path span.now{background:var(--gold);font-weight:600}
+.ask{background:var(--night);border-radius:24px;padding:36px 42px;color:#DCE0F2}
+.ask .k{font-size:17px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:var(--gold);margin-bottom:14px}
+.ask div.r{display:flex;gap:18px;align-items:baseline;padding:10px 0;border-bottom:1px solid #3A4585}.ask div.r:last-child{border-bottom:0}
+.ask b{font-family:var(--display);font-size:30px;color:#fff;min-width:250px}.ask span{font-size:23px}
+.s-amb .k9{margin-top:52px;font-size:18px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:var(--gold)}
+.ask3{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:18px}
+.ask3 div{background:var(--night);border-radius:22px;padding:30px 36px}
+.ask3 b{display:block;font-family:var(--display);font-size:40px;color:#fff}.ask3 span{display:block;font-size:24px;color:#C7CCE6;margin-top:8px}
+.founder2{margin-top:44px;display:flex;gap:24px;align-items:baseline;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:24px}
+.founder2 b{font-family:var(--display);font-size:28px;color:var(--navy)}.founder2 span{font-size:23px;color:var(--muted)}.founder2 i{font-style:normal;color:#8A6D1F;font-weight:600}
+.s-pilot{justify-content:center}
+.offer{margin-top:60px;align-self:flex-start;background:var(--navy);border-radius:30px;padding:56px 70px;color:#fff;display:flex;align-items:center;gap:70px}
+.offer .nm{font-family:var(--display);font-weight:800;font-size:58px;line-height:1.05;white-space:nowrap}.offer .nm span{color:var(--gold)}
+.offer .dur{font-size:30px;color:#C7CCE6;margin-top:12px}
+.offer .price{font-family:var(--display);font-weight:800;font-size:130px;line-height:1;white-space:nowrap;border-left:2px solid #3A4585;padding-left:70px}
+.offer .price small{font-size:.32em;color:var(--gold);margin-left:10px}
+.s-pilot .cond{margin-top:34px;font-size:28px;color:var(--muted)}
+.s-pilot .cond2{margin-top:10px;font-size:22px;color:var(--muted)}
 </style>
 
-<section style="--p:41.67%" class="slide s-sec">
-  <div class="sec-grid">
-    <div class="widget" aria-label="Exemple de réponse MairIA">
-      <div class="wh"><div class="av">IA</div><div><b>Besoin d'aide ?</b><small>Assistant de la Ville de Troyes</small></div></div>
-      <div class="wb">
-        <div class="bu">Je ne peux pas emporter mes encombrants à la déchèterie. Comment faire ?</div>
-        <div class="bb">Les encombrants se déposent dans l'une des déchèteries de l'agglomération troyenne.<br><br>Pour les personnes âgées ou à mobilité réduite, une collecte est assurée <b>sur rendez-vous uniquement</b> :<br><b>Régie Collecte · 03 25 45 27 30</b>
-          <div class="s">Source officielle · ville-troyes.fr/au-quotidien/etre-eco-citoyen/trier-ses-dechets/</div></div>
-      </div>
-    </div>
-    <div>
-      <div class="pillar t-sec">Sécurisez.</div>
-      <div class="tri paper"><i class="b-sec"></i></div>
-      <div class="proofs">
-        <div><b>Sources officielles</b><span>réponses vérifiables : la page officielle, avec le lien exact.</span></div>
-        <div><b>Bon interlocuteur</b><span>commune, agglomération, Département ou État ; escalade humaine tracée vers le service compétent.</span></div>
-        <div><b>Souveraineté</b><span>Mistral AI · hébergement Scaleway à Paris.</span></div>
-        <div><b>Traçabilité</b><span>chaque échange garde sa référence. Protection des données et maîtrise des traitements intégrées à la conception.</span></div>
-      </div>
-    </div>
-  </div>
-  <div class="crpa">
-    <p>Des fonctionnalités conçues pour accompagner les collectivités dans leurs obligations d'information et d'orientation des usagers, notamment dans le cadre du <b>Code des relations entre le public et l'administration (CRPA)</b>.<small>Escalade tracée : référence, délai de réponse et statut suivis dans le tableau de bord.</small></p>
-    <figure><img src="media/tickets-crpa-troyes.jpg" alt="Tableau de bord MairIA, tickets citoyens d'escalade avec délai CRPA"><figcaption>Tableau de bord MairIA · Ville de Troyes · ticket de test, référence masquée.</figcaption></figure>
-  </div>
-  <div class="src"><span class="tag p">Prouvé</span>Cas testé le 29/08/2026 ; règle, service, numéro et lien revalidés le 30/09/2026 sur la page officielle. Interface redessinée, réponse résumée.</div>
-  <div class="foot"><span class="brand">Mair<span>IA</span></span><span>05 / 12</span></div>
-</section>
-
-<section style="--p:50.00%" class="slide s-pil">
-  <div class="pillar t-pil">Pilotez.</div>
-  <div class="tri paper"><i class="b-pil"></i></div>
-  <div class="pil6">
-    <div>
-      <p class="lead6">Comprendre les demandes citoyennes pour <b>améliorer le service public</b>.</p>
-      <ul class="pl6">
-        <li><b>Volumes, questions récurrentes, escalades</b></li>
-        <li><b>Retours des citoyens</b> · chaque réponse peut être <span style="white-space:nowrap">notée 👍 / 👎</span></li>
-        <li><b>Points de friction</b> repérés, réponses améliorées</li>
-        <li><b>Visibilité</b> pour les équipes et les responsables</li>
-      </ul>
-      <div class="vis6"><span class="tag a">Vision</span>Demain : des synthèses territoriales et un pilotage mutualisé entre collectivités et intercommunalités.</div>
-    </div>
-    <figure class="dash6"><img src="media/dashboard-pilote-troyes.jpg" alt="Tableau de bord MairIA, pilote Ville de Troyes, questions masquées">
-      <figcaption><b>Pilote MairIA · Ville de Troyes · tests métiers 2026.</b> 674 conversations réalisées dans le cadre du pilote et des tests conduits par les équipes troyennes. Indicateurs de l'environnement d'expérimentation, avant ouverture au grand public. Questions masquées.</figcaption></figure>
-  </div>
-  <div class="foot"><span class="brand">Mair<span>IA</span></span><span>06 / 12</span></div>
-</section>
-
-<section style="--p:58.33%" class="slide">
-  <div class="eyebrow">Ce qui nous différencie</div>
-  <h2>Bien plus qu'un chatbot. <em>Une plateforme pensée pour les collectivités.</em></h2>
-  <p class="lead">Le modèle vient de Mistral AI. Notre actif, c'est <b>tout ce que nous avons construit autour</b>.</p>
-  <div class="moat mech">
-    <div><div class="big">Conversation</div><div class="lbl"><b>Une vraie conversation multitour</b> · le contexte est conservé d'une question à l'autre</div></div>
-    <div><div class="big">Escalade</div><div class="lbl"><b>Transmission tracée au service compétent</b> · avec l'historique et un accusé de réception</div></div>
-    <div><div class="big">Pilotage</div><div class="lbl"><b>Volumes, retours et escalades</b> · pour comprendre les demandes et améliorer le service</div></div>
-    <div><div class="big">Zéro UI</div><div class="lbl"><b>Le citoyen ne cherche plus dans les rubriques</b> · l'agent le guide vers la réponse ou le bon service</div></div>
-  </div>
-  <div class="deploy">Déploiement en quelques jours après onboarding et audit, sans refonte SI !</div>
-  <div class="foot"><span class="brand">Mair<span>IA</span></span><span>07 / 12</span></div>
-</section>
-
-<section style="--p:66.67%" class="slide s-mkt">
+<section style="--p:72.73%" class="slide s-mkt">
   <div class="eyebrow">Marché</div>
-  <h2>Un marché national. <em>Une première cible claire.</em></h2>
-  <div class="market">
-    <div><div class="rings"><div class="r1"><span>TAM</span></div><div class="r2"><span>SAM</span></div><div class="r3"><span>SOM</span></div></div>
-    <div class="lex"><span><b>TAM</b> marché total adressable</span><span><b>SAM</b> segment initial ciblé</span><span><b>SOM</b> part de marché visée</span></div></div>
-    <div class="mk">
-      <div class="mrow"><div class="big">36 127</div><div><b>communes et EPCI à fiscalité propre</b><span>34 875 communes + 1 252 EPCI · DGCL 2026</span></div></div>
-      <div class="mrow"><div class="big">5 025</div><div><b>communes de 2 000 à 19 999 habitants</b><span>cœur de cible initial · DGCL 2026, fiche 2.3a</span></div></div>
-      <div class="mrow"><div class="big">200–300</div><div><b>collectivités fin 2028 : premier objectif de déploiement</b><span><span class="tag a">Ambition</span>construit avec une organisation encore portée par son fondateur</span></div></div>
-      <div class="reading">Démarrage territorial : <b>l'Aube, puis le Grand Est</b>. Ce premier palier représente moins de 1 % du marché national ; l'accompagnement, le recrutement et le financement peuvent accélérer cette trajectoire.</div>
+  <h2>Un besoin <em>national.</em></h2>
+  <div class="mk2">
+    <div class="mk1">
+      <div class="approx">Environ</div><div class="big">36 000</div>
+      <p>communes et intercommunalités en France.<small>Partout, les mêmes questions des habitants.<br>Partout, des équipes d'accueil à soulager.</small></p>
+    </div>
+    <div class="mkside">
+      <div><b><i>environ</i>35 000</b><span>communes, du village à la métropole</span></div>
+      <div><b><i>environ</i>1 250</b><span>intercommunalités</span></div>
+      <div class="one"><span>Une même obligation : <strong>informer et orienter</strong> chaque habitant.</span></div>
     </div>
   </div>
-  <div class="src">DGCL, <i>Les collectivités locales en chiffres 2026</i>, chapitre 2, au 1er janvier 2026.</div>
-  <div class="foot"><span class="brand">Mair<span>IA</span></span><span>08 / 12</span></div>
+  <div class="src">DGCL, <i>Les collectivités locales en chiffres 2026</i> : 34 875 communes et 1 252 intercommunalités au 1er janvier 2026.</div>
+  <div class="foot"><span class="brand">Mair<span>IA</span></span><span>08 / 11</span></div>
+</section>
+
+<section style="--p:81.82%" class="slide s-amb">
+  <div class="eyebrow">Ambition</div>
+  <h2>De l'Aube aux <em>collectivités françaises.</em></h2>
+  <div class="road">
+    <div><b>Aube</b><span>2026 · territoire fondateur</span></div>
+    <div><b>Grand Est</b><span>2027 et au-delà · déploiement régional</span></div>
+    <div><b>France</b><span>dès 2027 · ambition nationale</span></div>
+  </div>
+  <div class="k9">Ce que nous cherchons</div>
+  <div class="ask3">
+    <div><b>Réseau</b><span>collectivités, Région, partenaires</span></div>
+    <div><b>Accélération</b><span>déployer plus vite</span></div>
+    <div><b>Financement</b><span>financer la croissance</span></div>
+  </div>
+  <div class="founder2"><b>Marwan Sabara · Fondateur</b><span>Autodidacte · Ancien militaire · Cabinets d'avocats · Entrepreneur · <i>Fondateur GovTech</i></span></div>
+  <div class="foot"><span class="brand">Mair<span>IA</span></span><span>09 / 11</span></div>
+</section>
+
+<section style="--p:90.91%" class="slide s-pilot">
+  <div class="eyebrow">Pour commencer</div>
+  <h2>Tester MairIA <em>en conditions réelles.</em></h2>
+  <div class="offer">
+    <div><div class="nm">Pilote Mair<span>IA</span></div><div class="dur">30 jours · sans engagement de souscription</div></div>
+    <div class="price">490 €<small>HT</small></div>
+  </div>
+  <p class="cond">Conditions et périmètre à définir selon la collectivité.</p>
+  <p class="cond2">MairIA Vocal : nous consulter.</p>
+  <div class="foot"><span class="brand">Mair<span>IA</span></span><span>10 / 11</span></div>
 </section>
 <style>
-.tiers{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;margin-top:56px}
-.tier{background:#fff;border:1px solid var(--line);border-radius:22px;padding:34px 32px;display:flex;flex-direction:column}
-.tier small{font-family:var(--display);font-weight:800;font-size:26px;color:var(--gold)}
-.tier .big{font-size:84px;margin-top:10px}.tier .per{font-size:19px;color:var(--muted);margin-top:6px}
-.tier .hab{margin-top:22px;font-size:20px;font-weight:600;color:var(--navy)}
-.tier .set{margin-top:18px;padding-top:16px;border-top:1px solid var(--line);font-size:20px;color:var(--muted)}
-.tier.hl{background:var(--navy);border-color:var(--navy)}.tier.hl .big,.tier.hl .hab{color:#fff}.tier.hl .per,.tier.hl .set{color:#C7CCE6;border-color:#3A4585}
-.pilot{margin-top:30px;display:flex;gap:28px;align-items:baseline;background:var(--gold-soft);border-radius:18px;padding:24px 32px}
-.pilot b{font-family:var(--display);font-size:32px;color:var(--navy);white-space:nowrap}.pilot span{font-size:24px;color:#5c4a17}
-.pfirst{margin-top:40px;align-items:center}.pfirst b{font-size:40px}.pfirst span{font-size:27px;color:var(--navy);font-weight:600}.pfirst small{display:block;font-size:20px;font-weight:400;color:#5c4a17;margin-top:4px}
-.then{margin-top:30px;font-size:16px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:var(--gold)}
-.s-biz .tiers{margin-top:14px}.s-biz .tier{padding:26px 30px}.s-biz .tier .big{font-size:72px}.s-biz .tier .hab{margin-top:14px}.s-biz .tier .set{margin-top:12px;padding-top:12px}
-.techno{position:absolute;left:150px;bottom:92px;display:flex;align-items:center;gap:14px;font-family:var(--display);font-weight:700;font-size:22px;color:var(--navy)}.techno span{font-family:var(--body);font-size:15px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:#8A6D1F;background:var(--gold-soft);border-radius:6px;padding:7px 12px}
-.trac{display:grid;grid-template-columns:1.1fr 1fr;gap:36px;margin-top:48px}
-.hero{background:var(--navy);border-radius:24px;padding:40px 44px;color:#fff}
-.hero h3{font-family:var(--display);font-size:40px;line-height:1.15}
-.facts{margin-top:30px;display:flex;flex-direction:column;gap:20px}
-.facts div{border-left:4px solid var(--gold);padding-left:22px}
-.facts b{display:block;font-size:26px;font-weight:600}.facts span{font-size:21px;color:#C7CCE6}
-.pipe{background:#fff;border:1px solid var(--line);border-radius:24px;padding:36px 40px}
-.pipe .k{font-size:16px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:var(--gold);margin-bottom:20px}
-.pipe div.r{display:flex;flex-direction:column;gap:2px;border-bottom:1px solid var(--line);padding:14px 0}
-.pipe div.r:last-child{border-bottom:0}
-.trac .pipe{padding:30px 40px}.trac .pipe div.r{flex-direction:row;flex-wrap:wrap;align-items:baseline;gap:2px 12px;padding:12px 0}.trac .pipe b{font-size:23px}.trac .pipe span{font-size:18px}
-.pipe b{font-size:26px;color:var(--navy);font-weight:600}.pipe span{font-size:20px;color:var(--muted)}
-.road{display:grid;grid-template-columns:1fr 1.25fr 1.6fr;margin-top:50px;border-radius:20px;overflow:hidden}
-.road div{padding:30px 34px;background:var(--tint)}.road div:nth-child(2){background:#D9DDF0}.road div:nth-child(3){background:var(--navy);color:#fff}
-.road b{display:block;font-family:var(--display);font-size:40px;color:var(--navy)}.road div:nth-child(3) b{color:#fff}
-.road span{font-size:21px;color:var(--muted)}.road div:nth-child(3) span{color:#C7CCE6}
-.vis{display:grid;grid-template-columns:1.25fr 1fr;gap:40px;margin-top:40px}
-.founder{background:#fff;border:1px solid var(--line);border-radius:24px;padding:32px 38px}
-.founder h3{font-family:var(--display);font-size:32px;color:var(--navy)}
-.founder .path{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
-.founder .path span{font-size:20px;background:var(--tint);color:var(--navy);border-radius:30px;padding:8px 16px}
-.founder .path span.now{background:var(--gold);color:var(--navy);font-weight:600}
-.founder p{font-size:22px;line-height:1.4;color:var(--muted);margin-top:18px}
-.ask{background:var(--night);border-radius:24px;padding:32px 38px;color:#DCE0F2}
-.ask .k{font-size:16px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:var(--gold);margin-bottom:16px}
-.ask div.r{display:flex;gap:18px;align-items:baseline;padding:10px 0;border-bottom:1px solid #3A4585}.ask div.r:last-child{border-bottom:0}
-.ask b{font-family:var(--display);font-size:28px;color:#fff;min-width:240px}.ask span{font-size:21px}
 /* 12 · spot puis signature */
 .s-end{background:#0E1230;padding:0;align-items:center;justify-content:center}
 .s-end .ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;transition:opacity .6s ease}
@@ -414,98 +447,6 @@ h2 em,h1 em{font-style:normal;color:var(--gold)}
 @media print{.pslide{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:46px;width:1920px;height:1080px;background:#0E1230;break-after:page;color:#9EA6CF;font-size:22px;letter-spacing:.1em;text-transform:uppercase}
 .pslide .plink{font-family:var(--display);font-weight:700;font-size:30px;letter-spacing:0;text-transform:none;color:var(--gold);text-decoration:underline;text-underline-offset:8px;text-decoration-thickness:2px}.pslide .eyebrow{margin:0}.pposters{display:flex;gap:40px}.pposters img{width:300px;height:533px;object-fit:cover;border-radius:22px}}
 </style>
-
-<section style="--p:75.00%" class="slide s-biz">
-  <div class="eyebrow">Modèle économique · Prix Fondateurs 2026</div>
-  <h2>Un SaaS <em>accessible</em>, pensé pour se répliquer.</h2>
-  <div class="pilot pfirst"><b>Pilote 30 jours · 490 € HT</b><span>Première étape : tester MairIA en conditions réelles, sans engagement.<small>Paliers XS et S · intégralement déduit de la première année si souscription sous 60 jours · M, L et XL : sur devis.</small></span></div>
-  <div class="then">Puis l'abonnement annuel · Prix Fondateurs 2026, garantis pendant le contrat d'un an</div>
-  <div class="tiers t5">
-    <div class="tier"><small>XS</small><div class="big">1 068<span class="u">€</span></div><div class="per">HT / an · soit 89 € / mois</div><div class="hab">Moins de 2 000 hab.</div><div class="est">≈ 60 conversations / mois</div><div class="set">Installation 390 € HT</div></div>
-    <div class="tier"><small>S</small><div class="big">1 788<span class="u">€</span></div><div class="per">HT / an · soit 149 € / mois</div><div class="hab">2 000 à 9 999 hab.</div><div class="est">≈ 150 conversations / mois</div><div class="set">Installation 490 € HT</div></div>
-    <div class="tier hl"><small>M</small><div class="big">3 588<span class="u">€</span></div><div class="per">HT / an · soit 299 € / mois</div><div class="hab">10 000 à 29 999 hab.</div><div class="est">≈ 360 conversations / mois</div><div class="set">Installation 790 € HT</div></div>
-    <div class="tier"><small>L</small><div class="big">7 188<span class="u">€</span></div><div class="per">HT / an · soit 599 € / mois</div><div class="hab">30 000 à 99 999 hab.</div><div class="est">≈ 750 conversations / mois</div><div class="set">Installation 1 490 € HT</div></div>
-    <div class="tier"><small>XL</small><div class="big">11 880<span class="u">€</span></div><div class="per">HT / an · soit 990 € / mois</div><div class="hab">100 000 hab. et plus</div><div class="est">≈ 1 500 conversations / mois</div><div class="set">Installation 2 490 € HT</div></div>
-  </div>
-  <div class="vocal"><b>Pas de site internet ? Peu d'heures d'ouverture ? MairIA répond aussi au téléphone.</b>
-    <div class="cas"><span><i>Sans site internet</i> un premier accueil par téléphone, sans widget à intégrer.</span><span><i>Permanence réduite</i> les questions courantes traitées hors des heures d'ouverture.</span></div>
-    <span class="note">MairIA Vocal · canal complémentaire en expérimentation, seul ou avec le Web · dès 1 548 € HT / an · sous réserve de validation technique et contractuelle.</span></div>
-  <div class="src">Tranches d'habitants indicatives ; le palier est fixé au devis selon l'usage et le périmètre. Estimations d'utilisation indicatives, non garanties. Engagement de 12 mois, tarif garanti pendant sa durée. Achat sur bon de commande, facturation Chorus Pro.</div>
-  <div class="foot"><span class="brand">Mair<span>IA</span></span><span>09 / 12</span></div>
-</section>
-<style>
-.s-biz .pfirst{margin-top:26px;padding:18px 30px}
-.s-biz .then{margin-top:20px}
-.s-biz .tiers.t5{grid-template-columns:repeat(5,minmax(0,1fr));gap:16px;margin-top:12px}
-.s-biz .t5 .tier{padding:18px 20px}
-.s-biz .t5 .tier .big{font-size:44px;margin-top:6px;white-space:nowrap}
-.s-biz .t5 .tier .hab{margin-top:10px}
-.s-biz .t5 .tier .set{margin-top:10px;padding-top:10px;font-size:17px}
-.s-biz .t5 .tier .per{font-size:17px}
-.s-biz .t5 .tier .hab{font-size:19px}
-.s-biz .t5 .est{margin-top:6px;font-size:17px;color:var(--muted)}
-.s-biz .t5 .tier.hl .est{color:#C7CCE6}
-.s-biz .vocal{margin-top:16px;display:flex;flex-direction:column;gap:4px;border-left:6px solid var(--gold);padding:10px 24px;background:#fff;border-radius:0 14px 14px 0}
-.s-biz .vocal b{font-family:var(--display);font-size:24px;color:var(--navy)}
-.s-biz .vocal .cas{display:grid;grid-template-columns:1fr 1fr;gap:28px}
-.s-biz .vocal .cas span{font-size:19px;color:var(--ink,#1B2440)}
-.s-biz .vocal .cas i{font-style:normal;font-weight:700;color:var(--gold-ink,#8A6D1F);margin-right:8px}
-.s-biz .vocal .note{font-size:17px;color:var(--muted)}
-</style>
-
-<section style="--p:83.33%" class="slide">
-  <div class="eyebrow">Traction</div>
-  <h2>Une première preuve terrain : <em>Troyes + TCM.</em></h2>
-  <div class="trac">
-    <div class="hero">
-      <span class="tag p" style="background:#1F4D3A;color:#9FE3BF">Prouvé</span>
-      <h3 style="margin-top:16px">Ville de Troyes<br>+ Troyes Champagne Métropole</h3>
-      <div class="facts">
-        <div><b>Premier achat public</b><span>bon de commande · 3 juillet 2026</span></div>
-        <div><b>Première facture sur Chorus Pro</b><span>déposée le 14 juillet 2026</span></div>
-        <div><b>Deux assistants opérés par MairIA</b><span>un pour la Ville, un pour l'agglomération</span></div>
-        <div><b>Prêts pour la mise en service citoyenne</b><span>ouverture publique soumise à validation de la collectivité</span></div>
-      </div>
-    </div>
-    <div class="pipe">
-      <div class="k"><span class="tag o">Pipeline</span>en discussion, aucun contrat signé</div>
-      <div class="r"><b>Sézanne</b><span>intérêt du maire · démonstration planifiée</span></div>
-      <div class="r"><b>Châtillon</b><span>démonstration présentée · calendrier budgétaire</span></div>
-      <div class="r"><b>Le Plessis-Bouchard</b><span>pilote demandé · cadrage en cours</span></div>
-      <div class="r"><b>Vannes</b><span>échange avec le service communication · démonstration demandée</span></div>
-      <div class="r"><b>Sainte-Savine</b><span>contact commercial avec un adjoint au maire</span></div>
-      <div class="r"><b>Pays Dunois</b><span>opportunité intercommunale</span></div>
-      <div class="r"><b>Nord · Capinghem, Fourmies</b><span>démonstrateurs · relais territorial</span></div>
-    </div>
-  </div>
-  <div class="techno"><span>Accompagnement entrepreneurial</span>Technopole de l'Aube</div>
-  <div class="foot"><span class="brand">Mair<span>IA</span></span><span>10 / 12</span></div>
-</section>
-
-<section style="--p:91.67%" class="slide">
-  <div class="eyebrow">Vision</div>
-  <h2>De l'Aube à une <em>ambition nationale.</em></h2>
-  <div class="road">
-    <div><b>Aube</b><span>2026 · territoire fondateur</span></div>
-    <div><b>Grand Est</b><span>2027 · premiers pilotes régionaux</span></div>
-    <div><b>France</b><span>2028 · réplication par les EPCI et les réseaux d'élus</span></div>
-  </div>
-  <div class="vis">
-    <div class="founder">
-      <h3>Marwan Sabara · Fondateur</h3>
-      <div class="path"><span>Autodidacte</span><span>Ancien militaire</span><span>Cabinets d'avocats</span><span>Entrepreneur</span><span class="now">Fondateur GovTech</span></div>
-      <p>Un produit conçu, vendu et opéré avec une collectivité en quelques mois.</p>
-    </div>
-    <div class="ask">
-      <div class="k">Ce que nous cherchons</div>
-      <div class="r"><b>Réseau</b><span>collectivités, partenaires, décideurs</span></div>
-      <div class="r"><b>Accélération</b><span>déploiement commercial</span></div>
-      <div class="r"><b>Financement</b><span>financer la réplication</span></div>
-    </div>
-  </div>
-  <div class="foot"><span class="brand">Mair<span>IA</span></span><span>11 / 12</span></div>
-</section>
-
 <div class="pslide"><div class="eyebrow">Notre premier spot publicitaire</div>
   <div class="pposters"><img src="media/spot-1-poster.jpg" alt="Spot 1"><img src="media/spot-2-poster.jpg" alt="Spot 2"></div>
   <p>Spots vidéo (15 s + 20 s)</p><a class="plink" href="https://nomenklaturai.github.io/mairia-deck-presentation/#12">Voir les spots dans la présentation en ligne →</a></div>
@@ -529,7 +470,7 @@ h2 em,h1 em{font-style:normal;color:var(--gold)}
     <div class="sub">L'assistant IA des collectivités !</div>
     <div class="cta">
       <p class="cta1">Avec MairIA, construisons la <b>ville de demain !</b></p>
-      <p class="cta2">Collectivités, partenaires, acteurs de l'innovation : donnons vie à cette ambition.</p>
+      <p class="cta2">Collectivités, entreprises, partenaires : parlons-en.</p>
       <div class="cta-row">
         <a class="cta-txt" href="https://calendly.com/m-sabara-mairia/demo-mairia-15-min"><b>Réservez votre démo de 15 minutes.</b><span>Découvrez MairIA en action.</span></a>
         <a class="qr" href="https://calendly.com/m-sabara-mairia/demo-mairia-15-min" aria-label="Réserver une démo de 15 minutes"><img src="media/qr-demo-calendly.svg" alt="QR code : réserver une démo MairIA de 15 minutes"></a>
