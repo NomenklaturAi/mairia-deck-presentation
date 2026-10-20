@@ -238,7 +238,8 @@ h2 em,h1 em{font-style:normal;color:var(--gold)}
 .pipe3{background:var(--navy);border-radius:26px;padding:40px 48px;color:#fff}
 .pipe3 h3,.first h3{font-family:var(--display);font-size:42px;line-height:1.12}
 .pipe3 .l{font-size:21px;color:#C7CCE6;margin-top:10px}
-.names2{display:grid;grid-template-columns:1fr 1fr;gap:12px 20px;margin-top:28px}
+.names2{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:repeat(5,auto);grid-auto-flow:column;gap:12px 20px;margin-top:28px}
+.names2 span em{font-style:normal;font-family:var(--body);font-weight:500;font-size:20px;color:#C7CCE6}
 .names2 span{font-family:var(--display);font-weight:700;font-size:27px;color:#fff;border-left:4px solid var(--gold);padding:6px 0 6px 18px}
 .first{background:#fff;border:1px solid var(--line);border-radius:26px;padding:40px 44px}
 .first h3{color:var(--navy);font-size:36px}
@@ -263,7 +264,7 @@ h2 em,h1 em{font-style:normal;color:var(--gold)}
     <div class="clock">
       <div class="big">24<span>/</span>7</div>
       <p>Les questions n'attendent pas l'ouverture.</p>
-      <div class="flow"><div><i>1</i>Question de l'habitant</div><div><i>2</i>Réponse sourcée, immédiate</div><div><i>3</i>Agent libéré</div></div>
+      <div class="flow"><div><i>1</i>Question de l'habitant</div><div><i>2</i>Réponse sourcée</div><div><i>3</i>Agent libéré</div></div>
     </div>
   </div>
   <div class="foot"><span class="brand">Mair<span>IA</span></span><span>04 / 11</span></div>
@@ -273,8 +274,8 @@ h2 em,h1 em{font-style:normal;color:var(--gold)}
   <div class="pillar t-sec">Sécurisez.</div>
   <div class="tri"><i class="b-sec"></i></div>
   <div class="proofs">
-    <div><b>Sources officielles</b><span>Chaque réponse cite la page officielle.</span></div>
-    <div><b>Souveraineté</b><span>IA française Mistral AI, hébergée en France.</span></div>
+    <div><b>Sources officielles</b><span>Les réponses citent la page officielle.</span></div>
+    <div><b>Souveraineté</b><span>IA française Mistral AI, cloud français.</span></div>
     <div><b>Conformité</b><span>Conçu pour les obligations du <strong>CRPA</strong>.</span></div>
   </div>
   <div class="esc">
@@ -289,11 +290,12 @@ h2 em,h1 em{font-style:normal;color:var(--gold)}
     <div>
       <div class="pillar t-pil">Pilotez.</div>
       <div class="tri paper"><i class="b-pil"></i></div>
-      <p class="lead6">Voir ce que demandent les habitants. <b>Améliorer le service.</b></p>
+      <p class="lead6">Des indicateurs pour les élus. <b>Des décisions pour mieux servir les habitants.</b></p>
       <ul class="pl6">
-        <li><b>Volumes</b> et questions récurrentes</li>
-        <li><b>Avis des habitants</b> sur chaque réponse</li>
-        <li><b>Points de blocage</b> repérés</li>
+        <li><b>Les demandes</b>, thème par thème</li>
+        <li><b>Ce qui bloque</b> : démarches à clarifier</li>
+        <li><b>Ce qui marche</b> : satisfaction mesurée</li>
+        <li><b>Un bilan prêt</b> pour le conseil municipal</li>
       </ul>
     </div>
     <figure><img src="media/dashboard-pilote-troyes.jpg" alt="Tableau de bord MairIA d'une collectivité pilote, questions masquées">
@@ -308,8 +310,8 @@ h2 em,h1 em{font-style:normal;color:var(--gold)}
   <div class="trac2">
     <div class="pipe3">
       <h3>Collectivités en discussion</h3>
-      <p class="l">Démonstrations faites, pilotes demandés. Aucun contrat signé à ce jour.</p>
-      <div class="names2"><span>Bourg-en-Bresse</span><span>Capinghem</span><span>Châtillon</span><span>Fourmies</span><span>Le Plessis-Bouchard</span><span>Nice</span><span>Pays Dunois</span><span>Sainte-Savine</span><span>Sézanne</span><span>Vannes</span></div>
+      <p class="l">Échanges en cours, à différents stades. Aucun contrat signé à ce jour.</p>
+      <div class="names2"><span>Bourg-en-Bresse <em>(01)</em></span><span>Capinghem <em>(59)</em></span><span>Châtillon <em>(92)</em></span><span>Fourmies <em>(59)</em></span><span>Le Plessis-Bouchard <em>(95)</em></span><span>Nice <em>(06)</em></span><span>Pays Dunois <em>(23)</em></span><span>Sainte-Savine <em>(10)</em></span><span>Sézanne <em>(51)</em></span><span>Vannes <em>(56)</em></span></div>
     </div>
     <div class="first">
       <h3>Une première ville<br>et son agglomération</h3>
@@ -324,9 +326,17 @@ h2 em,h1 em{font-style:normal;color:var(--gold)}
   <div class="foot"><span class="brand">Mair<span>IA</span></span><span>07 / 11</span></div>
 </section>
 <style>
-.s-mkt .mk1{display:flex;flex-direction:column;justify-content:center;gap:34px;flex:1;padding-bottom:60px}
-.s-mkt .mk1 .big{font-size:230px;letter-spacing:-.03em}
-.s-mkt .mk1 p{max-width:1300px;font-size:44px;line-height:1.3;font-family:var(--display);font-weight:700;color:var(--navy)}
+.s-mkt .mk2{display:grid;grid-template-columns:1fr 520px;gap:70px;align-items:center;flex:1;padding-bottom:60px}
+.s-mkt .mk1{display:flex;flex-direction:column;justify-content:center;gap:30px}
+.mkside{display:flex;flex-direction:column;gap:22px}
+.mkside div{background:#fff;border:1px solid var(--line);border-left:6px solid var(--gold);border-radius:16px;padding:22px 28px}
+.mkside b{display:block;font-family:var(--display);font-weight:800;font-size:58px;color:var(--navy);line-height:1}
+.mkside span{display:block;font-size:23px;color:var(--muted);margin-top:8px}
+.s-mkt .approx{font-family:var(--display);font-weight:700;font-size:34px;color:var(--gold);margin-bottom:-18px}
+.mkside b i{font-style:normal;font-family:var(--body);font-weight:500;font-size:22px;color:var(--gold);margin-right:12px;vertical-align:middle}
+.mkside .one{background:var(--navy);border-color:var(--navy)}.mkside .one span{color:#DCE0F2;font-size:25px;margin:0;line-height:1.35}.mkside .one strong{color:var(--gold)}
+.s-mkt .mk1 .big{font-size:190px;letter-spacing:-.03em}
+.s-mkt .mk1 p{max-width:1000px;font-size:40px;line-height:1.3;font-family:var(--display);font-weight:700;color:var(--navy)}
 .s-mkt .mk1 p small{display:block;font-family:var(--body);font-weight:300;font-size:30px;color:var(--muted);margin-top:22px;line-height:1.4}
 .road{display:grid;grid-template-columns:1fr 1.25fr 1.6fr;margin-top:56px;border-radius:22px;overflow:hidden}
 .road div{padding:34px 38px;background:var(--tint)}.road div:nth-child(2){background:#D9DDF0}.road div:nth-child(3){background:var(--navy);color:#fff}
@@ -361,11 +371,18 @@ h2 em,h1 em{font-style:normal;color:var(--gold)}
 <section style="--p:72.73%" class="slide s-mkt">
   <div class="eyebrow">Marché</div>
   <h2>Un besoin <em>national.</em></h2>
-  <div class="mk1">
-    <div class="big">36 127</div>
-    <p>communes et intercommunalités en France.<small>Partout, les mêmes questions des habitants. Partout, des équipes d'accueil à soulager.</small></p>
+  <div class="mk2">
+    <div class="mk1">
+      <div class="approx">Environ</div><div class="big">36 000</div>
+      <p>communes et intercommunalités en France.<small>Partout, les mêmes questions des habitants.<br>Partout, des équipes d'accueil à soulager.</small></p>
+    </div>
+    <div class="mkside">
+      <div><b><i>environ</i>35 000</b><span>communes, du village à la métropole</span></div>
+      <div><b><i>environ</i>1 250</b><span>intercommunalités</span></div>
+      <div class="one"><span>Une même obligation : <strong>informer et orienter</strong> chaque habitant.</span></div>
+    </div>
   </div>
-  <div class="src">DGCL, <i>Les collectivités locales en chiffres 2026</i> : 34 875 communes et 1 252 EPCI à fiscalité propre, au 1er janvier 2026.</div>
+  <div class="src">DGCL, <i>Les collectivités locales en chiffres 2026</i> : 34 875 communes et 1 252 intercommunalités au 1er janvier 2026.</div>
   <div class="foot"><span class="brand">Mair<span>IA</span></span><span>08 / 11</span></div>
 </section>
 
@@ -374,8 +391,8 @@ h2 em,h1 em{font-style:normal;color:var(--gold)}
   <h2>De l'Aube aux <em>collectivités françaises.</em></h2>
   <div class="road">
     <div><b>Aube</b><span>2026 · territoire fondateur</span></div>
-    <div><b>Grand Est</b><span>2027 · premiers pilotes régionaux</span></div>
-    <div><b>France</b><span>2028 · ambition nationale</span></div>
+    <div><b>Grand Est</b><span>2027 et au-delà · déploiement régional</span></div>
+    <div><b>France</b><span>dès 2027 · ambition nationale</span></div>
   </div>
   <div class="k9">Ce que nous cherchons</div>
   <div class="ask3">
