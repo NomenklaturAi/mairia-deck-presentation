@@ -416,19 +416,42 @@ h2 em,h1 em{font-style:normal;color:var(--gold)}
 </style>
 
 <section style="--p:75.00%" class="slide s-biz">
-  <div class="eyebrow">Modèle économique · grille 2026 active</div>
+  <div class="eyebrow">Modèle économique · Prix Fondateurs 2026</div>
   <h2>Un SaaS <em>accessible</em>, pensé pour se répliquer.</h2>
-  <div class="pilot pfirst"><b>Pilote 1 mois · 690 € HT</b><span>Tester MairIA sur son territoire, avant de s'engager dans la durée.<small>En conditions réelles, déduit du setup en cas de poursuite.</small></span></div>
-  <div class="then">Puis l'abonnement mensuel</div>
-  <div class="tiers">
-    <div class="tier"><small>XS</small><div class="big">290<span class="u">€</span></div><div class="per">HT / mois</div><div class="hab">Généralement moins de 10 000 hab.</div><div class="set">Setup 690 € HT</div></div>
-    <div class="tier"><small>S</small><div class="big">490<span class="u">€</span></div><div class="per">HT / mois</div><div class="hab">Généralement 10 000 à 30 000 hab.</div><div class="set">Setup 990 € HT</div></div>
-    <div class="tier hl"><small>M</small><div class="big">790<span class="u">€</span></div><div class="per">HT / mois</div><div class="hab">Généralement 30 000 à 100 000 hab.</div><div class="set">Setup 1 990 € HT</div></div>
-    <div class="tier"><small>L</small><div class="big">1 190<span class="u">€</span></div><div class="per">HT / mois</div><div class="hab">Généralement plus de 100 000 hab.</div><div class="set">Setup 2 990 € HT</div></div>
+  <div class="pilot pfirst"><b>Pilote 30 jours · 490 € HT</b><span>Première étape : tester MairIA en conditions réelles, sans engagement.<small>Paliers XS et S · intégralement déduit de la première année si souscription sous 60 jours · M, L et XL : sur devis.</small></span></div>
+  <div class="then">Puis l'abonnement annuel · Prix Fondateurs 2026, garantis pendant le contrat d'un an</div>
+  <div class="tiers t5">
+    <div class="tier"><small>XS</small><div class="big">1 068<span class="u">€</span></div><div class="per">HT / an · soit 89 € / mois</div><div class="hab">Moins de 2 000 hab.</div><div class="est">≈ 60 conversations / mois</div><div class="set">Installation 390 € HT</div></div>
+    <div class="tier"><small>S</small><div class="big">1 788<span class="u">€</span></div><div class="per">HT / an · soit 149 € / mois</div><div class="hab">2 000 à 9 999 hab.</div><div class="est">≈ 150 conversations / mois</div><div class="set">Installation 490 € HT</div></div>
+    <div class="tier hl"><small>M</small><div class="big">3 588<span class="u">€</span></div><div class="per">HT / an · soit 299 € / mois</div><div class="hab">10 000 à 29 999 hab.</div><div class="est">≈ 360 conversations / mois</div><div class="set">Installation 790 € HT</div></div>
+    <div class="tier"><small>L</small><div class="big">7 188<span class="u">€</span></div><div class="per">HT / an · soit 599 € / mois</div><div class="hab">30 000 à 99 999 hab.</div><div class="est">≈ 750 conversations / mois</div><div class="set">Installation 1 490 € HT</div></div>
+    <div class="tier"><small>XL</small><div class="big">11 880<span class="u">€</span></div><div class="per">HT / an · soit 990 € / mois</div><div class="hab">100 000 hab. et plus</div><div class="est">≈ 1 500 conversations / mois</div><div class="set">Installation 2 490 € HT</div></div>
   </div>
-  <div class="src">Le palier est fixé à l'onboarding selon l'usage et le périmètre ; les tranches d'habitants sont indicatives. Achat sur bon de commande, facturation Chorus Pro.</div>
+  <div class="vocal"><b>Pas de site internet ? Peu d'heures d'ouverture ? MairIA répond aussi au téléphone.</b>
+    <div class="cas"><span><i>Sans site internet</i> un premier accueil par téléphone, sans widget à intégrer.</span><span><i>Permanence réduite</i> les questions courantes traitées hors des heures d'ouverture.</span></div>
+    <span class="note">MairIA Vocal · canal complémentaire en expérimentation, seul ou avec le Web · dès 1 548 € HT / an · sous réserve de validation technique et contractuelle.</span></div>
+  <div class="src">Tranches d'habitants indicatives ; le palier est fixé au devis selon l'usage et le périmètre. Estimations d'utilisation indicatives, non garanties. Engagement de 12 mois, tarif garanti pendant sa durée. Achat sur bon de commande, facturation Chorus Pro.</div>
   <div class="foot"><span class="brand">Mair<span>IA</span></span><span>09 / 12</span></div>
 </section>
+<style>
+.s-biz .pfirst{margin-top:26px;padding:18px 30px}
+.s-biz .then{margin-top:20px}
+.s-biz .tiers.t5{grid-template-columns:repeat(5,minmax(0,1fr));gap:16px;margin-top:12px}
+.s-biz .t5 .tier{padding:18px 20px}
+.s-biz .t5 .tier .big{font-size:44px;margin-top:6px;white-space:nowrap}
+.s-biz .t5 .tier .hab{margin-top:10px}
+.s-biz .t5 .tier .set{margin-top:10px;padding-top:10px;font-size:17px}
+.s-biz .t5 .tier .per{font-size:17px}
+.s-biz .t5 .tier .hab{font-size:19px}
+.s-biz .t5 .est{margin-top:6px;font-size:17px;color:var(--muted)}
+.s-biz .t5 .tier.hl .est{color:#C7CCE6}
+.s-biz .vocal{margin-top:16px;display:flex;flex-direction:column;gap:4px;border-left:6px solid var(--gold);padding:10px 24px;background:#fff;border-radius:0 14px 14px 0}
+.s-biz .vocal b{font-family:var(--display);font-size:24px;color:var(--navy)}
+.s-biz .vocal .cas{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.s-biz .vocal .cas span{font-size:19px;color:var(--ink,#1B2440)}
+.s-biz .vocal .cas i{font-style:normal;font-weight:700;color:var(--gold-ink,#8A6D1F);margin-right:8px}
+.s-biz .vocal .note{font-size:17px;color:var(--muted)}
+</style>
 
 <section style="--p:83.33%" class="slide">
   <div class="eyebrow">Traction</div>
