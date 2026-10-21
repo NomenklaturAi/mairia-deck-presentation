@@ -333,9 +333,10 @@ h2 em,h1 em{font-style:normal;color:var(--gold)}
 .mkside b{display:block;font-family:var(--display);font-weight:800;font-size:58px;color:var(--navy);line-height:1}
 .mkside span{display:block;font-size:23px;color:var(--muted);margin-top:8px}
 .s-mkt .approx{font-family:var(--display);font-weight:700;font-size:34px;color:var(--gold);margin-bottom:-18px}
-.mkside b i{font-style:normal;font-family:var(--body);font-weight:500;font-size:22px;color:var(--gold);margin-right:12px;vertical-align:middle}
+.mkside b i{font-style:normal;font-weight:700;font-size:.8em;color:var(--gold);margin-right:14px}
+.s-mkt .mk1 .big .ap{font-size:.62em;font-weight:700;color:var(--gold);margin-right:18px;vertical-align:.08em}
 .mkside .one{background:var(--navy);border-color:var(--navy)}.mkside .one span{color:#DCE0F2;font-size:25px;margin:0;line-height:1.35}.mkside .one strong{color:var(--gold)}
-.s-mkt .mk1 .big{font-size:190px;letter-spacing:-.03em}
+.s-mkt .mk1 .big{font-size:166px;letter-spacing:-.03em}
 .s-mkt .mk1 p{max-width:1000px;font-size:40px;line-height:1.3;font-family:var(--display);font-weight:700;color:var(--navy)}
 .s-mkt .mk1 p small{display:block;font-family:var(--body);font-weight:300;font-size:30px;color:var(--muted);margin-top:22px;line-height:1.4}
 .road{display:grid;grid-template-columns:1fr 1.25fr 1.6fr;margin-top:56px;border-radius:22px;overflow:hidden}
@@ -373,12 +374,12 @@ h2 em,h1 em{font-style:normal;color:var(--gold)}
   <h2>Un besoin <em>national.</em></h2>
   <div class="mk2">
     <div class="mk1">
-      <div class="approx">Environ</div><div class="big">36 000</div>
+      <div class="big"><span class="ap">≈</span>36 000</div>
       <p>communes et intercommunalités en France.<small>Partout, les mêmes questions des habitants.<br>Partout, des équipes d'accueil à soulager.</small></p>
     </div>
     <div class="mkside">
-      <div><b><i>environ</i>35 000</b><span>communes, du village à la métropole</span></div>
-      <div><b><i>environ</i>1 250</b><span>intercommunalités</span></div>
+      <div><b><i>≈</i>35 000</b><span>communes, du village à la métropole</span></div>
+      <div><b><i>≈</i>1 250</b><span>intercommunalités</span></div>
       <div class="one"><span>Une même obligation : <strong>informer et orienter</strong> chaque habitant.</span></div>
     </div>
   </div>
@@ -386,7 +387,54 @@ h2 em,h1 em{font-style:normal;color:var(--gold)}
   <div class="foot"><span class="brand">Mair<span>IA</span></span><span>08 / 11</span></div>
 </section>
 
-<section style="--p:81.82%" class="slide s-amb">
+<section style="--p:81.82%" class="slide s-biz">
+  <div class="eyebrow">Modèle économique</div>
+  <h2>Un modèle économique <em>proportionné à l'usage.</em></h2>
+  <div class="bz">
+    <div class="steps">
+      <div class="k9">Cinq paliers, selon la taille</div>
+      <div class="stairs">
+        <div style="--h:22%"><i></i><b>XS</b><span>moins de<br>2 000 hab.</span></div>
+        <div style="--h:38%"><i></i><b>S</b><span>2 000 à<br>9 999 hab.</span></div>
+        <div style="--h:56%"><i></i><b>M</b><span>10 000 à<br>29 999 hab.</span></div>
+        <div style="--h:76%"><i></i><b>L</b><span>30 000 à<br>99 999 hab.</span></div>
+        <div style="--h:100%"><i></i><b>XL</b><span>100 000 hab.<br>et plus</span></div>
+      </div>
+      <p class="note">Le palier est fixé au devis, selon la taille et l'usage réel.</p>
+    </div>
+    <div class="tok">
+      <div class="k9">Pourquoi plusieurs paliers ?</div>
+      <p class="t1">Chaque réponse mobilise un modèle d'IA, facturé au volume de calcul&nbsp;: <b>les tokens.</b></p>
+      <div class="chain"><span>Plus d'habitants</span><i>→</i><span>plus de questions</span><i>→</i><span>plus de tokens</span></div>
+      <p class="t2">Le prix suit l'usage : <b>un village ne paie pas le calcul d'une métropole.</b></p>
+    </div>
+  </div>
+  <div class="entry"><b>Pour commencer</b><span>Pilote Mair<em>IA</em> · 30 jours · <strong>490 € HT</strong> · sans engagement de souscription</span><small>MairIA Vocal : nous consulter.</small></div>
+  <div class="foot"><span class="brand">Mair<span>IA</span></span><span>09 / 11</span></div>
+</section>
+<style>
+.s-biz .bz{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;margin-top:48px}
+.s-biz .k9{font-size:18px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:var(--gold)}
+.s-biz .stairs{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;align-items:end;height:330px;margin-top:22px}
+.s-biz .stairs div{height:100%;display:flex;flex-direction:column;justify-content:flex-end}
+.s-biz .stairs i{display:block;height:calc(var(--h) * .58);background:var(--tint);border-radius:14px 14px 4px 4px}
+.s-biz .stairs div:nth-child(3) i{background:#D9DDF0}.s-biz .stairs div:nth-child(4) i{background:#B9C0E2}.s-biz .stairs div:nth-child(5) i{background:var(--navy)}
+.s-biz .stairs b{font-family:var(--display);font-weight:800;font-size:40px;color:var(--navy);margin-top:14px;line-height:1}
+.s-biz .stairs span{font-size:20px;line-height:1.3;color:var(--muted);margin-top:6px}
+.s-biz .note{margin-top:20px;font-size:21px;color:var(--muted)}
+.s-biz .tok{background:var(--night);border-radius:26px;padding:38px 44px;color:#DCE0F2}
+.s-biz .tok .t1{font-size:28px;line-height:1.38;margin-top:18px}.s-biz .tok b{color:#fff;font-weight:600}
+.s-biz .chain{display:flex;flex-wrap:nowrap;align-items:center;gap:10px;margin-top:26px;white-space:nowrap}
+.s-biz .chain span{border:2px solid var(--gold);color:#F0D98C;border-radius:40px;padding:7px 14px;font-size:19px;font-weight:600}
+.s-biz .chain i{font-style:normal;color:var(--gold);font-size:21px}
+.s-biz .tok .t2{font-size:26px;line-height:1.38;margin-top:26px;border-top:1px solid #3A4585;padding-top:22px}
+.s-biz .entry{margin-top:auto;margin-bottom:40px;display:flex;align-items:baseline;gap:26px;flex-wrap:wrap;border-left:6px solid var(--gold);padding:14px 28px;background:#fff;border-radius:0 14px 14px 0}
+.s-biz .entry b{font-family:var(--display);font-size:24px;color:var(--gold);letter-spacing:.04em}
+.s-biz .entry span{font-size:25px;color:var(--ink)}.s-biz .entry em{font-style:normal;color:var(--gold)}.s-biz .entry strong{color:var(--navy)}
+.s-biz .entry small{font-size:19px;color:var(--muted)}
+</style>
+
+<section style="--p:90.91%" class="slide s-amb">
   <div class="eyebrow">Ambition</div>
   <h2>De l'Aube aux <em>collectivités françaises.</em></h2>
   <div class="road">
@@ -401,20 +449,9 @@ h2 em,h1 em{font-style:normal;color:var(--gold)}
     <div><b>Financement</b><span>financer la croissance</span></div>
   </div>
   <div class="founder2"><b>Marwan Sabara · Fondateur</b><span>Autodidacte · Ancien militaire · Cabinets d'avocats · Entrepreneur · <i>Fondateur GovTech</i></span></div>
-  <div class="foot"><span class="brand">Mair<span>IA</span></span><span>09 / 11</span></div>
-</section>
-
-<section style="--p:90.91%" class="slide s-pilot">
-  <div class="eyebrow">Pour commencer</div>
-  <h2>Tester MairIA <em>en conditions réelles.</em></h2>
-  <div class="offer">
-    <div><div class="nm">Pilote Mair<span>IA</span></div><div class="dur">30 jours · sans engagement de souscription</div></div>
-    <div class="price">490 €<small>HT</small></div>
-  </div>
-  <p class="cond">Conditions et périmètre à définir selon la collectivité.</p>
-  <p class="cond2">MairIA Vocal : nous consulter.</p>
   <div class="foot"><span class="brand">Mair<span>IA</span></span><span>10 / 11</span></div>
 </section>
+
 <style>
 /* 12 · spot puis signature */
 .s-end{background:#0E1230;padding:0;align-items:center;justify-content:center}

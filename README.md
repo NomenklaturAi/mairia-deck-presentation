@@ -1,7 +1,7 @@
 # MairIA — Deck IA\PERO · 22 octobre 2026
 
 **Événement :** IA\PERO × Tech a Drink — Technopole de l'Aube / French Tech Est.
-**Statut :** FOUNDER APPROVED — CHARLINE PENDING — PUBLICATION HOLD.
+**Statut :** FOUNDER APPROVED — RETOUR CHARLINE (21/10) INTÉGRÉ — PUBLICATION SUR MERGE.
 **Branche :** `pitch-ia-pero-2026-10-22` (ne pas merger sur `main` sans instruction explicite du Founder).
 
 ## Livrables
